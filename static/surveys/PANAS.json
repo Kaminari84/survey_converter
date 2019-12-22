@@ -1,0 +1,223 @@
+[
+    { 
+        "//":"https://ogg.osu.edu/media/documents/MB%20Stream/PANAS.pdf",
+        "text": "Indicate the extent you have felt INTERESTED over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt DISTRESSED over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt EXCITED over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt UPSET over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt STRONG over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt GUILTY over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt SCARED over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt HOSTILE over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt ENTHUSIASTIC over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt PROUD over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt IRRITABLE over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt ALERT over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt ASHAMED over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt INSPIRED over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt NERVOUS over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt DETERMINED over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt ATTENTIVE over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt JITTERY over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt ACTIVE over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    },
+    { 
+        "text": "Indicate the extent you have felt AFRAID over the past week?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Very slightly or not at all" },
+            {"value": "2", "text" : "A little" },
+            {"value": "3", "text" : "Moderately"},
+            {"value": "4", "text" : "Quite a bit"},
+            {"value": "5", "text" : "Extremely"}
+        ]
+    }
+]

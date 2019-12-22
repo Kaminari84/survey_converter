@@ -1,0 +1,274 @@
+[
+    {
+        "source": "augmented",
+        "text": "Hi, my name is CourseSatisfactionBot. Let's start by talking about course satisfaction.",
+        "type": "Skip"
+    },
+    {
+        "//": "https://www.surveymonkey.com/mp/university-student-satisfaction-survey-template/?ut_source=mp&ut_source2=sample-survey-questionnaire-templates&ut_source3=survey-template-gallery",
+        "mod_text": "how well do the professors teach at the university?",
+        "options": [
+            {
+                "text": "Extremely well",
+                "value": "5"
+            },
+            {
+                "text": "Very well",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat well",
+                "value": "3"
+            },
+            {
+                "text": "Not so well",
+                "value": "2"
+            },
+            {
+                "text": "Not at all well",
+                "value": "1"
+            }
+        ],
+        "org_text": "How well do the professors teach at the university?",
+        "prefix": "Would you mind sharing",
+        "text": "Would you mind sharing how well do the professors teach at the university?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how effective is the teaching outside your major at this university?",
+        "options": [
+            {
+                "text": "Extremely effective",
+                "value": "5"
+            },
+            {
+                "text": "Very effective",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat effective",
+                "value": "3"
+            },
+            {
+                "text": "Not so effective",
+                "value": "2"
+            },
+            {
+                "text": "Not at all effective",
+                "value": "1"
+            }
+        ],
+        "org_text": "How effective is the teaching outside your major at this university?",
+        "prefix": "Could you tell me",
+        "text": "Could you tell me how effective is the teaching outside your major at this university?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how well-maintained are the facilities at this university?",
+        "options": [
+            {
+                "text": "Extremely well-maintained",
+                "value": "5"
+            },
+            {
+                "text": "Very well-maintained",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat well-maintained",
+                "value": "3"
+            },
+            {
+                "text": "Not so well-maintained",
+                "value": "2"
+            },
+            {
+                "text": "Not at all well-maintained",
+                "value": "1"
+            }
+        ],
+        "org_text": "How well-maintained are the facilities at this university?",
+        "prefix": "Further, can i ask you",
+        "text": "Further, can i ask you how well-maintained are the facilities at this university?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how helpful is your academic advisor?",
+        "options": [
+            {
+                "text": "Extremely helpful",
+                "value": "5"
+            },
+            {
+                "text": "Very helpful",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat helpful",
+                "value": "3"
+            },
+            {
+                "text": "Not so helpful",
+                "value": "2"
+            },
+            {
+                "text": "Not at all helpful",
+                "value": "1"
+            }
+        ],
+        "org_text": "How helpful is your academic advisor?",
+        "prefix": "Continuing, can you tell me",
+        "text": "Continuing, can you tell me how helpful is your academic advisor?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how easy is it to register for courses at this university?",
+        "options": [
+            {
+                "text": "Extremely easy",
+                "value": "5"
+            },
+            {
+                "text": "Very easy",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat easy",
+                "value": "3"
+            },
+            {
+                "text": "Not so easy",
+                "value": "2"
+            },
+            {
+                "text": "Not at all easy",
+                "value": "1"
+            }
+        ],
+        "org_text": "How easy is it to register for courses at this university?",
+        "prefix": "Would you mind telling me",
+        "text": "Would you mind telling me how easy is it to register for courses at this university?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how safe do you feel on campus?",
+        "options": [
+            {
+                "text": "Extremely safe",
+                "value": "5"
+            },
+            {
+                "text": "Very safe",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat safe",
+                "value": "3"
+            },
+            {
+                "text": "Not so safe",
+                "value": "2"
+            },
+            {
+                "text": "Not at all safe",
+                "value": "1"
+            }
+        ],
+        "org_text": "How safe do you feel on campus?",
+        "prefix": "Moving on, can i ask you",
+        "text": "Moving on, can i ask you how safe do you feel on campus?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how helpful is the staff at the on-campus health center?",
+        "options": [
+            {
+                "text": "Extremely helpful",
+                "value": "5"
+            },
+            {
+                "text": "Very helpful",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat helpful",
+                "value": "3"
+            },
+            {
+                "text": "Not so helpful",
+                "value": "2"
+            },
+            {
+                "text": "Not at all helpful",
+                "value": "1"
+            }
+        ],
+        "org_text": "How helpful is the staff at the on-campus health center?",
+        "prefix": "Next, could you tell me",
+        "text": "Next, could you tell me how helpful is the staff at the on-campus health center?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how useful are the services provided by the on-campus career center?",
+        "options": [
+            {
+                "text": "Extremely useful",
+                "value": "5"
+            },
+            {
+                "text": "Very useful",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat useful",
+                "value": "3"
+            },
+            {
+                "text": "Not so useful",
+                "value": "2"
+            },
+            {
+                "text": "Not at all useful",
+                "value": "1"
+            }
+        ],
+        "org_text": "How useful are the services provided by the on-campus career center?",
+        "prefix": "Moving on, can you tell me",
+        "text": "Moving on, can you tell me how useful are the services provided by the on-campus career center?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how easy is it to obtain the resources you need from the university library system?",
+        "options": [
+            {
+                "text": "Extremely easy",
+                "value": "5"
+            },
+            {
+                "text": "Very easy",
+                "value": "4"
+            },
+            {
+                "text": "Somewhat easy",
+                "value": "3"
+            },
+            {
+                "text": "Not so easy",
+                "value": "2"
+            },
+            {
+                "text": "Not at all easy",
+                "value": "1"
+            }
+        ],
+        "org_text": "How easy is it to obtain the resources you need from the university library system?",
+        "prefix": "Let me ask you",
+        "text": "Let me ask you how easy is it to obtain the resources you need from the university library system?",
+        "type": "Options"
+    },
+    {
+        "source": "augmented",
+        "text": "We are done! Thanks.",
+        "type": "End"
+    }
+]

@@ -1,0 +1,135 @@
+[   
+    {
+        "//":"Kember, D., and D.Y.P. Leung, with A. Jones, A.Y. Loke, J. McKay, K. Sinclair, H. Tse, C. Webb, F.K.Y. Wong, M. Wong, E. Yeung. 2000. Development of a questionnaire to measure the level of reflective thinking. Assessment & Evaluation in Higher Education, 25: 381–95. https://drive.google.com/open?id=0BxOElS07OkKiUzRydG53RG1YdTA",
+        "//":"https://docs.google.com/document/d/1KvmvemxwH4BfSg29SmJj59VaX6cQYvwr1pMe0caOHrQ/edit",
+        "//":"Please fill in the appropriate circle to indicate your level of agreement with statements about your actions and thinking in this course.",
+        "//":"HABITUAL ACTION",
+        "text":"When I am working on some activities, I can do them without thinking about what I am doing.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+
+    },
+    {
+        "text":"In this course we do things so many times that I started doing them without thinking about it.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+
+    },
+    {
+        "text":"As long as I can remember handout material for examinations, I do not have to think too much.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+
+    },
+    {
+        "text":"If I follow what the lecturer says, I do not have to think too much on this course.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    },
+    {
+        "//":"UNDERSTANDING",
+        "text":"This course requires us to understand concepts taught by the lecturer.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    },
+    {
+        "text":"To pass this course you need to understand the content.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    },
+    {
+        "text":"I need to understand the material taught by the teacher in order to perform practical tasks.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    },
+    {
+        "text":"In this course you have to continually think about the material you are being taught.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    },
+    {
+        "//":"REFLECTION",
+        "text":"I sometimes question the way others do something and try to think of a better way.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    },
+    {
+        "//":"REFLECTION",
+        "text":"I like to think over what I have been doing and consider alternative way of doing it.",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    },
+    {
+        "//":"REFLECTION",
+        "text":"I often reflect on my actions to see whether I could have improved on what I did",
+        "type": "Options", 
+        "options": [ 
+            {"value": "A", "text" : "Definitely agree" },
+            {"value": "B", "text" : "Agree with reservation" },
+            {"value": "C", "text" : "Only to be used if a definite answer is not possible"},
+            {"value": "C", "text" : "Disagree with reservation" },
+            {"value": "D", "text" : "Definitely disagree" }
+        ]
+    }
+
+]

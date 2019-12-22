@@ -1,0 +1,593 @@
+[
+    {
+        "source": "augmented",
+        "text": "Hey, I am StressBot. Let's talk about stress.",
+        "type": "Skip"
+    },
+    {
+        "//": "https://ogg.osu.edu/media/documents/MB%20Stream/PANAS.pdf",
+        "mod_text": "the extent you have felt INTERESTED over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt INTERESTED over the past week?",
+        "prefix": "Let me ask you",
+        "text": "Let me ask you indicate the extent you have felt INTERESTED over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt DISTRESSED over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt DISTRESSED over the past week?",
+        "prefix": "Would you mind telling me",
+        "text": "Would you mind telling me indicate the extent you have felt DISTRESSED over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt EXCITED over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt EXCITED over the past week?",
+        "prefix": "Next, can you tell me",
+        "text": "Next, can you tell me indicate the extent you have felt EXCITED over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt UPSET over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt UPSET over the past week?",
+        "prefix": "Can I ask you",
+        "text": "Can I ask you indicate the extent you have felt UPSET over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt STRONG over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt STRONG over the past week?",
+        "prefix": "Further, can i ask you",
+        "text": "Further, can i ask you indicate the extent you have felt STRONG over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt GUILTY over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt GUILTY over the past week?",
+        "prefix": "Moving on, would you mind sharing",
+        "text": "Moving on, would you mind sharing indicate the extent you have felt GUILTY over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt SCARED over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt SCARED over the past week?",
+        "prefix": "Further, could you tell me",
+        "text": "Further, could you tell me indicate the extent you have felt SCARED over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt HOSTILE over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt HOSTILE over the past week?",
+        "prefix": "Going forward, would you mind telling me",
+        "text": "Going forward, would you mind telling me indicate the extent you have felt HOSTILE over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt ENTHUSIASTIC over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt ENTHUSIASTIC over the past week?",
+        "prefix": "Next, can you tell me",
+        "text": "Next, can you tell me indicate the extent you have felt ENTHUSIASTIC over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt PROUD over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt PROUD over the past week?",
+        "prefix": "Let me ask you",
+        "text": "Let me ask you indicate the extent you have felt PROUD over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt IRRITABLE over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt IRRITABLE over the past week?",
+        "prefix": "Moving on, would you mind telling me",
+        "text": "Moving on, would you mind telling me indicate the extent you have felt IRRITABLE over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt ALERT over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt ALERT over the past week?",
+        "prefix": "Continuing, could you tell me",
+        "text": "Continuing, could you tell me indicate the extent you have felt ALERT over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt ASHAMED over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt ASHAMED over the past week?",
+        "prefix": "Let me ask you",
+        "text": "Let me ask you indicate the extent you have felt ASHAMED over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt INSPIRED over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt INSPIRED over the past week?",
+        "prefix": "Going forward, can i ask you",
+        "text": "Going forward, can i ask you indicate the extent you have felt INSPIRED over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt NERVOUS over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt NERVOUS over the past week?",
+        "prefix": "Next, can you tell me",
+        "text": "Next, can you tell me indicate the extent you have felt NERVOUS over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt DETERMINED over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt DETERMINED over the past week?",
+        "prefix": "Continuing, would you mind sharing",
+        "text": "Continuing, would you mind sharing indicate the extent you have felt DETERMINED over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt ATTENTIVE over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt ATTENTIVE over the past week?",
+        "prefix": "Can I ask you",
+        "text": "Can I ask you indicate the extent you have felt ATTENTIVE over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt JITTERY over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt JITTERY over the past week?",
+        "prefix": "Moving on, could you tell me",
+        "text": "Moving on, could you tell me indicate the extent you have felt JITTERY over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt ACTIVE over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt ACTIVE over the past week?",
+        "prefix": "Further, would you mind telling me",
+        "text": "Further, would you mind telling me indicate the extent you have felt ACTIVE over the past week?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "the extent you have felt AFRAID over the past week?",
+        "options": [
+            {
+                "text": "Very slightly or not at all",
+                "value": "1"
+            },
+            {
+                "text": "A little",
+                "value": "2"
+            },
+            {
+                "text": "Moderately",
+                "value": "3"
+            },
+            {
+                "text": "Quite a bit",
+                "value": "4"
+            },
+            {
+                "text": "Extremely",
+                "value": "5"
+            }
+        ],
+        "org_text": "Indicate the extent you have felt AFRAID over the past week?",
+        "prefix": "Going forward, can you tell me",
+        "text": "Going forward, can you tell me indicate the extent you have felt AFRAID over the past week?",
+        "type": "Options"
+    },
+    {
+        "source": "augmented",
+        "text": "We are done! Thanks for your patience.",
+        "type": "End"
+    }
+]

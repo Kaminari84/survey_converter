@@ -1,0 +1,42 @@
+{
+    "Positive_frame": [
+        "how confident are you filling out medical forms by yourself ?",
+        "how safe do you feel where you live ?",
+        "in this course we do things so many times that i started doing them without thinkin gabout it.",
+        "i feel very safe where i live .",
+        "i am comfortable with the way things are going in my life",
+        "how happy are you with your curren job ?",
+        "i feel quite comfortable shring my story with others .",
+        "do you have enough resources to pay for the very basic needs such as food , housing and medications ?",
+        "do you feel satisfied with your current job ?",
+        "how well do the professors teach at the university?",
+        "how effective is the teaching outside your major at this university?",
+        "how happy and excited do you feel?"
+    ],
+    "Negative_frame": [
+        "do you feel sad and exhausted ?",
+        "How often do you feel sad, exhausted and stressed every day?",
+        "thinking about your place , do you have problems with any of the following ?",
+        "did you experience issues with violence in your neighborhood ?",
+        "do you feel extremely stressed and prone to crying ?",
+        "are you uncomfortable answering survey questions ?",
+        "do you feel thretened by your curren boss ?",
+        "how insecure , discouraged , irritated , stressed , and annoyed were you ?",
+        "how hard did you have to work to accomplish this task well ?",
+        "how mentally demanding was the task ?",
+        "how hurried or rushed was the pace of your work these recent days ?",
+        "little interest or pleasure in doing things",
+        "trouble concentrating on things, such as reading the newspaper or watching television"
+    ],
+    "Neutral_frame": [
+        "what is your age ?",
+        "what is your occupation ?",
+        "how would you describe your work ?",
+        "how often do you do any of the following ?",
+        "do you own a car ?",
+        "what is your contact information ?",
+        "please list your family memmbers",
+        "how often do you spend time watching tv ?",
+        "how much do you earn a month ?"
+    ]
+}

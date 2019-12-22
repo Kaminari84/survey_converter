@@ -1,0 +1,85 @@
+[
+    {
+        "options": [
+            {
+                "text": "Yes",
+                "value": "opt_1"
+            },
+            {
+                "text": "No",
+                "value": "opt_2"
+            }
+        ],
+        "text": "I feel tired and in pain. ",
+        "type": "Options",
+        "url": "https://www.surveygizmo.com/s3/5367918/Test-survey-scraping?__sgtarget=1"
+    },
+    {
+        "options": [
+            {
+                "text": "Often",
+                "value": "opt_1"
+            },
+            {
+                "text": "Never",
+                "value": "opt_2"
+            },
+            {
+                "text": "Frequently",
+                "value": "opt_3"
+            }
+        ],
+        "text": "I feel I am very stressed and out of control. ",
+        "type": "Options",
+        "url": "https://www.surveygizmo.com/s3/5367918/Test-survey-scraping?__sgtarget=1"
+    },
+    {
+        "options": [
+            {
+                "text": "Often",
+                "value": "opt_1"
+            },
+            {
+                "text": "Not at all",
+                "value": "opt_2"
+            }
+        ],
+        "text": "How often do you reflect on your daily activities?",
+        "type": "Options",
+        "url": "https://www.surveygizmo.com/s3/5367918/Test-survey-scraping?__sgtarget=1"
+    },
+    {
+        "options": [
+            {
+                "text": "Very frequently",
+                "value": "opt_1"
+            },
+            {
+                "text": "Sometimes",
+                "value": "opt_2"
+            },
+            {
+                "text": "Never",
+                "value": "opt_3"
+            }
+        ],
+        "text": "How frequently do you need to think about what you\\'re doing? ",
+        "type": "Options",
+        "url": "https://www.surveygizmo.com/s3/5367918/Test-survey-scraping?__sgtarget=1"
+    },
+    {
+        "options": [
+            {
+                "text": "Yes",
+                "value": "opt_1"
+            },
+            {
+                "text": "No",
+                "value": "opt_2"
+            }
+        ],
+        "text": "Do you often have to rethink your decisions? ",
+        "type": "Options",
+        "url": "https://www.surveygizmo.com/s3/5367918/Test-survey-scraping?__sgtarget=1"
+    }
+]

@@ -1,0 +1,168 @@
+[
+    {
+        "source": "augmented",
+        "text": "Hi, I am SocialNeedsBot. Let's talk a bit about social needs.",
+        "type": "Skip"
+    },
+    {
+        "mod_text": "do you have enough resources to pay for the very basics like food, housing, and medical care?",
+        "org_text": "Do you have enough resources to pay for the very basics like food, housing, and medical care?",
+        "prefix": "Would you mind sharing",
+        "text": "Would you mind sharing do you have enough resources to pay for the very basics like food, housing, and medical care?",
+        "type": "Yes/No"
+    },
+    {
+        "mod_text": "do you have any significant outstanding bills or debts?",
+        "org_text": "Do you have any significant outstanding bills or debts?",
+        "prefix": "Going forward, would you mind telling me",
+        "text": "Going forward, would you mind telling me do you have any significant outstanding bills or debts?",
+        "type": "Yes/No"
+    },
+    {
+        "mod_text": "do you want help finding work or keeping work or a job?",
+        "options": [
+            {
+                "text": "Yes, help finding work",
+                "value": "Opt_1"
+            },
+            {
+                "text": "Yes, help keeping work",
+                "value": "Opt_2"
+            },
+            {
+                "text": "I do not need or want help",
+                "value": "Opt_3"
+            }
+        ],
+        "org_text": "Do you want help finding work or keeping work or a job?",
+        "prefix": "Moving on, can i ask you",
+        "text": "Moving on, can i ask you do you want help finding work or keeping work or a job?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "do you want help with school or training? For example, starting or completing job training or getting a high school diploma, GED or equivalent?",
+        "org_text": "Do you want help with school or training? For example, starting or completing job training or getting a high school diploma, GED or equivalent?",
+        "prefix": "Continuing, let me ask you",
+        "text": "Continuing, let me ask you do you want help with school or training? For example, starting or completing job training or getting a high school diploma, GED or equivalent?",
+        "type": "Yes/No"
+    },
+    {
+        "mod_text": "what is your housing situation today?",
+        "options": [
+            {
+                "text": "I have housing",
+                "value": "Opt_1"
+            },
+            {
+                "text": "I have a place to live today, but I am worried about losing it in the future",
+                "value": "Opt_2"
+            },
+            {
+                "text": "I do not have a steady place to live",
+                "value": "Opt_3"
+            }
+        ],
+        "org_text": "What is your housing situation today?",
+        "prefix": "Next, can i ask you",
+        "text": "Next, can i ask you what is your housing situation today?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "about the place you live. Do you have problems with any of the following? (CHOOSE ALL THAT APPLY)",
+        "options": [
+            {
+                "text": "Pests such as bugs, ants, or mice",
+                "value": "Opt_1"
+            },
+            {
+                "text": "Mold",
+                "value": "Opt_2"
+            },
+            {
+                "text": "Lead paint or pipes",
+                "value": "Opt_3"
+            },
+            {
+                "text": "Lack of heat",
+                "value": "Opt_4"
+            },
+            {
+                "text": "Oven or stove not working",
+                "value": "Opt_5"
+            },
+            {
+                "text": "Smoke detectors missing or not working",
+                "value": "Opt_6"
+            },
+            {
+                "text": "Water leaks",
+                "value": "Opt_7"
+            }
+        ],
+        "org_text": "Think about the place you live. Do you have problems with any of the following? (CHOOSE ALL THAT APPLY)",
+        "prefix": "Would you mind telling me",
+        "text": "Would you mind telling me think about the place you live. Do you have problems with any of the following? (CHOOSE ALL THAT APPLY)",
+        "type": "Options-multiple"
+    },
+    {
+        "mod_text": "in the past 12 months has the electric, gas, oil, or water company threatened to shut off services in your home?",
+        "options": [
+            {
+                "text": "Yes",
+                "value": "Opt_1"
+            },
+            {
+                "text": "No",
+                "value": "Opt_2"
+            },
+            {
+                "text": "Already shut off",
+                "value": "Opt_3"
+            }
+        ],
+        "org_text": "In the past 12 months has the electric, gas, oil, or water company threatened to shut off services in your home?",
+        "prefix": "Can you tell me",
+        "text": "Can you tell me in the past 12 months has the electric, gas, oil, or water company threatened to shut off services in your home?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "within the past 12 months, were you worried whether your food would run out before you got money to buy more?",
+        "org_text": "Within the past 12 months, were you worried whether your food would run out before you got money to buy more?",
+        "prefix": "Going forward, would you mind sharing",
+        "text": "Going forward, would you mind sharing within the past 12 months, were you worried whether your food would run out before you got money to buy more?",
+        "type": "Yes/No"
+    },
+    {
+        "mod_text": "within the past 12 months the food you bought just didn't last and you didn't have money to get more. Was this:",
+        "options": [
+            {
+                "text": "Often true",
+                "value": "Opt_1"
+            },
+            {
+                "text": "Sometimes true",
+                "value": "Opt_2"
+            },
+            {
+                "text": "Never true",
+                "value": "Opt_3"
+            }
+        ],
+        "org_text": "Within the past 12 months the food you bought just didn't last and you didn't have money to get more. Was this:",
+        "prefix": "Could you tell me",
+        "text": "Could you tell me within the past 12 months the food you bought just didn't last and you didn't have money to get more. Was this:",
+        "type": "Options"
+    },
+    {
+        "mod_text": "have you experienced difficulty getting needed services because you do not have transportation?",
+        "org_text": "Have you experienced difficulty getting needed services because you do not have transportation?",
+        "prefix": "Let me ask you",
+        "text": "Let me ask you have you experienced difficulty getting needed services because you do not have transportation?",
+        "type": "Yes/No"
+    },
+    {
+        "source": "augmented",
+        "text": "We are done! Thanks for your patience.",
+        "type": "End"
+    }
+]

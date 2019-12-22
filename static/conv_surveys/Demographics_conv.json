@@ -1,0 +1,362 @@
+[
+    {
+        "source": "augmented",
+        "text": "Hi, my name is DemographicsBot. Let's start by talking about demographics.",
+        "type": "Skip"
+    },
+    {
+        "//": "https://www.questionpro.com/blog/demographic-survey-questions/",
+        "mod_text": "what gender do you identify as?",
+        "options": [
+            {
+                "text": "Male",
+                "value": "male"
+            },
+            {
+                "text": "Female",
+                "value": "female"
+            },
+            {
+                "text": "Prefer not to answer",
+                "value": "decline"
+            }
+        ],
+        "org_text": "What gender do you identify as?",
+        "prefix": "Would you mind telling me",
+        "section": "Standard Demographic Questions",
+        "text": "Would you mind telling me what gender do you identify as?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "what is your age?",
+        "options": [
+            {
+                "text": "0-15 years old",
+                "value": "range_1"
+            },
+            {
+                "text": "15-30 years old",
+                "value": "range_2"
+            },
+            {
+                "text": "30-45 years old",
+                "value": "range_3"
+            },
+            {
+                "text": "45+",
+                "value": "range_4"
+            },
+            {
+                "text": "Prefer not to answer",
+                "value": "range_5"
+            }
+        ],
+        "org_text": "What is your age?",
+        "prefix": "Going forward, let me ask you",
+        "text": "Going forward, let me ask you what is your age?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "please specify your ethnicity.",
+        "options": [
+            {
+                "text": "Caucasian",
+                "value": "caucasian"
+            },
+            {
+                "text": "African-American",
+                "value": "african"
+            },
+            {
+                "text": "Latino or Hispanic",
+                "value": "latino"
+            },
+            {
+                "text": "Asian",
+                "value": "asian"
+            },
+            {
+                "text": "Native American",
+                "value": "native"
+            },
+            {
+                "text": "Native Hawaiian or Pacific Islander",
+                "value": "hawaii"
+            },
+            {
+                "text": "Two or More",
+                "value": "multiple"
+            },
+            {
+                "text": "Other/Unknown",
+                "value": "other"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "Please specify your ethnicity.",
+        "prefix": "Could you tell me",
+        "text": "Could you tell me please specify your ethnicity.",
+        "type": "Options"
+    },
+    {
+        "mod_text": "where is your home located?",
+        "options": [
+            {
+                "text": "North America/Central America",
+                "value": "america"
+            },
+            {
+                "text": "South America",
+                "value": "samerica"
+            },
+            {
+                "text": "Europe",
+                "value": "europe"
+            },
+            {
+                "text": "Africa",
+                "value": "africa"
+            },
+            {
+                "text": "Asia",
+                "value": "asia"
+            },
+            {
+                "text": "Australia",
+                "value": "suatralia"
+            },
+            {
+                "text": "Caribbean Islands",
+                "value": "carribean"
+            },
+            {
+                "text": "Pacific Islands",
+                "value": "pacific"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "Where is your home located?",
+        "prefix": "Can you tell me",
+        "text": "Can you tell me where is your home located?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "what is the highest degree or level of education you have completed?",
+        "options": [
+            {
+                "text": "Some High School",
+                "value": "shs"
+            },
+            {
+                "text": "High School",
+                "value": "hs"
+            },
+            {
+                "text": "Bachelor's Degree",
+                "value": "bsc"
+            },
+            {
+                "text": "Master's Degree",
+                "value": "msc"
+            },
+            {
+                "text": "Ph.D. or higher",
+                "value": "phd"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "What is the highest degree or level of education you have completed?",
+        "prefix": "Continuing, would you mind sharing",
+        "text": "Continuing, would you mind sharing what is the highest degree or level of education you have completed?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "are you married?",
+        "options": [
+            {
+                "text": "Yes",
+                "value": "yes"
+            },
+            {
+                "text": "No",
+                "value": "no"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "Are you married?",
+        "prefix": "Next, can i ask you",
+        "text": "Next, can i ask you are you married?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "what is your annual household income?",
+        "options": [
+            {
+                "text": "Less than $25,000",
+                "value": "range_1"
+            },
+            {
+                "text": "$25,000 - $50,000",
+                "value": "range_2"
+            },
+            {
+                "text": "$50,000 - $100,000",
+                "value": "range_3"
+            },
+            {
+                "text": "$100,000 - $200,000",
+                "value": "range_4"
+            },
+            {
+                "text": "More than $200,000",
+                "value": "range_5"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "What is your annual household income?",
+        "prefix": "Moving on, can i ask you",
+        "section": "Demographic Survey Questions",
+        "text": "Moving on, can i ask you what is your annual household income?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "what is your current employment status?",
+        "options": [
+            {
+                "text": "Employed Full-Time",
+                "value": "full_time"
+            },
+            {
+                "text": "Employed Part-Time",
+                "value": "part_time"
+            },
+            {
+                "text": "Seeking opportunities",
+                "value": "unemployed"
+            },
+            {
+                "text": "Retired",
+                "value": "retired"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "What is your current employment status?",
+        "prefix": "Further, let me ask you",
+        "text": "Further, let me ask you what is your current employment status?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "how many children do you have?",
+        "options": [
+            {
+                "text": "None",
+                "value": "none"
+            },
+            {
+                "text": "1",
+                "value": "one_child"
+            },
+            {
+                "text": "2-4",
+                "value": "two_four_children"
+            },
+            {
+                "text": "More than 4",
+                "value": "more_than_4"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "How many children do you have?",
+        "prefix": "Moving on, could you tell me",
+        "text": "Moving on, could you tell me how many children do you have?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "are you registered to vote in USA?",
+        "options": [
+            {
+                "text": "Yes",
+                "value": "yes"
+            },
+            {
+                "text": "No",
+                "value": "no"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "Are you registered to vote in USA?",
+        "prefix": "Would you mind telling me",
+        "text": "Would you mind telling me are you registered to vote in USA?",
+        "type": "Options"
+    },
+    {
+        "mod_text": "which languages are you capable of speaking fluently? (Check all that apply)",
+        "options": [
+            {
+                "text": "English",
+                "value": "english"
+            },
+            {
+                "text": "Spanish",
+                "value": "spanish"
+            },
+            {
+                "text": "Portuguese",
+                "value": "portuguese"
+            },
+            {
+                "text": "French",
+                "value": "french"
+            },
+            {
+                "text": "Mandarin",
+                "value": "mandarin"
+            },
+            {
+                "text": "Arabic",
+                "value": "arabic"
+            },
+            {
+                "text": "Other",
+                "value": "other"
+            },
+            {
+                "text": "Prefer not to say",
+                "value": "decline"
+            }
+        ],
+        "org_text": "Which languages are you capable of speaking fluently? (Check all that apply)",
+        "prefix": "Continuing, would you mind sharing",
+        "text": "Continuing, would you mind sharing which languages are you capable of speaking fluently? (Check all that apply)",
+        "type": "Options-multiple"
+    },
+    {
+        "source": "augmented",
+        "text": "This is it! Thank you for your time.",
+        "type": "End"
+    }
+]

@@ -1,0 +1,336 @@
+[
+    {
+        "source": "augmented",
+        "text": "Hi, my name is ReflectionBot. I would like to talk to you about reflection.",
+        "type": "Skip"
+    },
+    {
+        "//": "HABITUAL ACTION",
+        "mod_text": "when I am working on some activities, I can do them without thinking about what I am doing.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "When I am working on some activities, I can do them without thinking about what I am doing.",
+        "prefix": "Let me ask you",
+        "text": "Let me ask you when I am working on some activities, I can do them without thinking about what I am doing.",
+        "type": "Options"
+    },
+    {
+        "mod_text": "in this course we do things so many times that I started doing them without thinking about it.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "In this course we do things so many times that I started doing them without thinking about it.",
+        "prefix": "Would you mind sharing",
+        "text": "Would you mind sharing in this course we do things so many times that I started doing them without thinking about it.",
+        "type": "Options"
+    },
+    {
+        "mod_text": "as long as I can remember handout material for examinations, I do not have to think too much.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "As long as I can remember handout material for examinations, I do not have to think too much.",
+        "prefix": "Would you mind telling me",
+        "text": "Would you mind telling me as long as I can remember handout material for examinations, I do not have to think too much.",
+        "type": "Options"
+    },
+    {
+        "mod_text": "if I follow what the lecturer says, I do not have to think too much on this course.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "If I follow what the lecturer says, I do not have to think too much on this course.",
+        "prefix": "Moving on, let me ask you",
+        "text": "Moving on, let me ask you if I follow what the lecturer says, I do not have to think too much on this course.",
+        "type": "Options"
+    },
+    {
+        "//": "UNDERSTANDING",
+        "mod_text": "this course requires us to understand concepts taught by the lecturer.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "This course requires us to understand concepts taught by the lecturer.",
+        "prefix": "Can I ask you",
+        "text": "Can I ask you this course requires us to understand concepts taught by the lecturer.",
+        "type": "Options"
+    },
+    {
+        "mod_text": "to pass this course you need to understand the content.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "To pass this course you need to understand the content.",
+        "prefix": "Continuing, could you tell me",
+        "text": "Continuing, could you tell me to pass this course you need to understand the content.",
+        "type": "Options"
+    },
+    {
+        "mod_text": "i need to understand the material taught by the teacher in order to perform practical tasks.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "I need to understand the material taught by the teacher in order to perform practical tasks.",
+        "prefix": "Can you tell me",
+        "text": "Can you tell me i need to understand the material taught by the teacher in order to perform practical tasks.",
+        "type": "Options"
+    },
+    {
+        "mod_text": "in this course you have to continually think about the material you are being taught.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "In this course you have to continually think about the material you are being taught.",
+        "prefix": "Would you mind sharing",
+        "text": "Would you mind sharing in this course you have to continually think about the material you are being taught.",
+        "type": "Options"
+    },
+    {
+        "//": "REFLECTION",
+        "mod_text": "i sometimes question the way others do something and try to think of a better way.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "I sometimes question the way others do something and try to think of a better way.",
+        "prefix": "Next, could you tell me",
+        "text": "Next, could you tell me i sometimes question the way others do something and try to think of a better way.",
+        "type": "Options"
+    },
+    {
+        "//": "REFLECTION",
+        "mod_text": "i like to think over what I have been doing and consider alternative way of doing it.",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "I like to think over what I have been doing and consider alternative way of doing it.",
+        "prefix": "Further, let me ask you",
+        "text": "Further, let me ask you i like to think over what I have been doing and consider alternative way of doing it.",
+        "type": "Options"
+    },
+    {
+        "//": "REFLECTION",
+        "mod_text": "i often reflect on my actions to see whether I could have improved on what I did",
+        "options": [
+            {
+                "text": "Definitely agree",
+                "value": "A"
+            },
+            {
+                "text": "Agree with reservation",
+                "value": "B"
+            },
+            {
+                "text": "Only to be used if a definite answer is not possible",
+                "value": "C"
+            },
+            {
+                "text": "Disagree with reservation",
+                "value": "C"
+            },
+            {
+                "text": "Definitely disagree",
+                "value": "D"
+            }
+        ],
+        "org_text": "I often reflect on my actions to see whether I could have improved on what I did",
+        "prefix": "Further, can you tell me",
+        "text": "Further, can you tell me i often reflect on my actions to see whether I could have improved on what I did",
+        "type": "Options"
+    },
+    {
+        "source": "augmented",
+        "text": "We've completed the whole survey! Thanks a lot!",
+        "type": "End"
+    }
+]

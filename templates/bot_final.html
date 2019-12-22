@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Survey Converter</title>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->    
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />-->
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./static/stylesheets/style3.css">
+
+    <!-- required for basic layout -->
+    <link rel="stylesheet" href="./static/stylesheets/botui.min.css" />
+
+    <!-- default theme - you can create your own theme -->
+    <link rel="stylesheet" href="./static/stylesheets/botui-theme-custom.css" />
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.2.5/jquery.bootstrap-touchspin.min.css" crossorigin="anonymous">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <!-- Material Components -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- icon for browser tabs -->
+    <link rel="shortcut icon" href="./static/images/bot-selected.ico">
+
+    <style>
+        .s_elem_q {
+            border: 0px solid black;
+            background-color: #dddddd;
+            padding: 5px;
+        }
+        .s_elem_a {
+            border: 0px solid black;
+            background-color: #ffffff;
+            padding-bottom: 5px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .s_elem_s {
+            border: 0px solid black;
+            background-color: #A8F8A8;
+            padding-bottom: 5px;
+        }
+
+    	body {
+    		font-family: Montserrat;
+    	}
+        .botui-container {
+        	background-color: #ffffff;
+        	border: 0px solid #e1e1ff;
+        	display: table;
+        	font-size: 18px;
+        }
+        .botui-app-container {
+            width: 100%;
+            min-height: 80vh;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .botui-messages-container {
+        	padding-bottom: 20px;
+        	display: table-row-group;
+        }
+
+        .botui-actions-container {
+        	position: absolute;
+        	right:0;
+        	width: 100vw;
+        	overflow: hidden;
+        	display: none;
+        	background-color: #f8f9fa;
+        	box-shadow: 0px -4px 3px rgba(0,0,0,0.1);
+        }
+
+        .fa-edit {
+        	color: #3676F4;
+        	cursor:pointer;
+        	transition-duration: 0.5s;
+        }
+
+        .fa-edit:hover {
+		    -webkit-filter: brightness(150%);
+        }
+
+        .right {
+        	float:right;
+        }
+
+
+		#sidebarCollapse {
+			background-color: #f8f9fa;
+			border-color: #f8f9fa;
+		}
+
+		#more {
+			color: #C4C4C4;
+		}
+
+		hr {
+			border-color: #fff;
+			width: 90%;
+		}
+
+		.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+		.navbar {min-height:10vh !important; background-color: #F2F2F2;}
+
+		body::after{
+		    position:absolute; 
+		    width:0; 
+		    height:0; 
+		    overflow:hidden; 
+		    z-index:-1;
+		}
+
+        .h-divider{
+            margin-top:5px;
+            margin-bottom:5px;
+            height:1px;
+            width:100%;
+            border-top:1px solid gray;
+            }
+
+		a.list-group-item {
+			color: #555;
+			text-align: right;
+		}
+
+		a.list-group-item:hover {
+			z-index: 2;
+		    color: #fff;
+		    background-color: #007bff;
+		    border-color: #007bff;
+		}
+
+		a.list-group-item.selected {
+          z-index: 2;
+          color: #fff;
+          background-color: #007bff;
+          border-color: #007bff;
+      	}
+
+      	.botui-actions-text-input {
+      		float: right;
+      	}
+
+      	.botui-actions-text-submit {
+      		float: right;
+      		font-size: 14px !important;
+      	}
+
+      	.botui-actions-buttons {
+      		width: 70vw;
+      		float: right;
+      		flex-direction: row;
+      		justify-content: flex-end;
+      		display: flex;
+      	}
+
+		.botui-actions-buttons-button {
+			color: #222;
+			background-color: #dddddd;
+		}
+
+		.botui-actions-buttons-button:hover {
+			color: #fff;
+			background-color: #007bff;
+		}
+
+		.botui-actions-buttons-button {
+			background: #f8f9fa;
+			border: 1.5px solid #3676F4; 
+			border-radius: 4px;
+			color: #3676F4;
+			font-family: Roboto;
+		}
+
+		.botui-actions-buttons-button:hover {
+				background: #3676F4;
+				border: 1.5px solid #3676F4; 
+				border-radius: 4px;
+				color: #ffffff;
+				font-family: Roboto;
+				font-size: 18 pt;
+
+		}
+
+		.botui-message {
+			position: relative;
+		}
+
+		.message-right {
+			float:right;
+			position: relative;
+		}
+
+		.botui-message-content {
+			background: #E8E8E8;
+			border-radius: 20px;
+			font-family: Roboto;
+			color: #333333;
+			font-size: 18px;
+			-webkit-box-shadow: -2px 2px 3px #888;
+			-moz-box-shadow: -2px -2px 3px #888;
+		}
+		
+		/*.botui-message-content.text:after {
+			content: '';
+			position: absolute;
+			top: 13%;
+			left: 0;
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-right-color: #E8E8E8;
+			border-left: 0;
+			border-top: 0;
+			margin-top: -3.5px;
+			margin-left: -7px;
+			filter: drop-shadow(-5px 2px 3px #888);
+		}*/
+
+		.botui-message-content.human {
+			background: #3676F4;
+			border-radius: 20px;	
+			font-family:  Roboto;
+			font-size: 18 pt;
+			color: #ffffff;
+		  }
+
+		  .botui-message-content.human.text {
+		  	display: inline-block;
+		  	-webkit-box-shadow: 2px 2px 4px #888;
+			-moz-box-shadow: 2px 2px 4px #888;
+		  }
+
+		  .col-lg-6.text-center {
+		  	padding-top: 100px;
+		  }
+
+		  .extraButton {
+			background: #ffffff;
+			border: 1.5px solid #3676F4; 
+			border-radius: 4px;
+			color: #3676F4;
+			font-family: Arial;
+			font-size:  18 pt;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: inline-block;
+			vertical-align: baseline;
+			cursor: pointer;
+			margin-right: 10px;
+			line-height: normal;
+			font-size: 100%;
+			font-weight: 500;
+			padding: 7px 15px;
+			box-shadow: 2px 3px 4px 0 rgba(0,0,0,.25);
+			overflow: visible;
+
+		}
+
+		.extraButton:hover {
+			background: #3676F4;
+			border: 1.5px solid #3676F4; 
+			border-radius: 4px;
+			color: #ffffff;
+			font-family: Arial;
+			font-size: 18 pt;
+		}
+		  
+		  .botui-message-content.human.text:after {
+			position: absolute;
+			right: 0;
+			left: auto;
+			top: 80%;
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-left-color: #3676F4;
+			border-right: 0;
+			border-bottom: 0;
+			margin-top: -3.5px;
+			margin-right: -3px;
+			margin-left: 0px;
+			filter: drop-shadow(5px 2px 3px #888);
+		  }
+
+		  .h4{
+		  	margin-top: 100px;
+		  	font-family: Roboto;
+		  	font-size: 18px;
+		  	color: #333333;
+
+		  }
+
+		  button {
+				background: #F2F2F2;
+				border: 0.5px solid #B7B7B7; 
+				border-radius: 4px;
+				color: #00000;
+				font-family: Roboto;
+				font-size:  18 pt;
+				padding: 5px 10px;
+		  }
+		  p{
+		  	font-family: Roboto;
+			font-size:  14px;
+			color: #333333;
+			margin: 0 0 0;
+		  }
+
+		  .util_label {
+		  	font-size: 18px;
+		  	font-family: "Roboto";
+		  	color: #8C8C8C;
+		  	display: inline-block;
+		  	vertical-align: top;
+		  	padding-left: 5px;
+		  }
+
+		  #start_button {
+		  	background-color:transparent;
+			-moz-border-radius:7px;
+			-webkit-border-radius:7px;
+			border-radius:7px;
+			border:2px solid #3675f4;
+			display:inline-block;
+			cursor:pointer;
+			color:#3675f4;
+			font-family:Arial;
+			font-size:15px;
+			font-weight:bold;
+			padding:7px 17px;
+			text-decoration:none;
+		  }
+
+		  #start_button:hover {
+		  	background-color: #3675f4;
+		  	color: white;
+		  }
+
+		  /*Menu/First Row*/
+		  .bgcolor {
+		  	background-color: #F2F2F2;
+		  	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+		  	
+		  }
+
+		   /* padding */
+
+		  .classWithPad{
+		  	padding-left: 20px;
+			padding-top: 20px;
+			/*width:60%;*/
+			display: inline-block;
+		  }
+		  /* combo box */
+		  select {
+		  		background: #ffffff;
+		  		height: 20px;
+				border: 1px solid #727272; 
+				border-radius: 2px;
+				color: #434343;
+				font-family: Arial;
+				font-size:  14px;
+		  }
+
+		  label {
+
+		    display: inline-block;
+		    color: #434343;
+		    font-family: Arial;
+		    font-weight: normal;
+		  }
+
+		  /* SLider */
+		  input[type=range] {
+		  	-webkit-appearance: none;
+		    width: 97%;
+		    height: 5px;
+		    border-radius: 5px;   
+		    background: #434343;
+		    outline: none;
+		    margin-right: auto;
+		    margin-left: auto;
+
+		    }	
+
+			input[type=range]::-webkit-slider-thumb {
+			    -webkit-appearance: none;
+			    appearance: none;
+			    width: 20px;
+			    height: 20px;
+			    border-radius: 50%;
+			    background: #434343;
+			    cursor: pointer;
+
+			}
+
+			input[type=range]::-moz-range-thumb {
+			    width: 25px;
+			    height: 25px;
+			    border-radius: 50%;
+			    background: #4CAF50;
+			    cursor: pointer;
+			}
+
+			.fixed-top {
+			    position: fixed;
+			    top: 0;
+			    right: 0;
+			    left: 0;
+			    z-index: 1030;
+			}
+
+        
+    </style>
+
+    <!--<script type="text/javascript" src="./static/conv_surveys/conv_survey.js"></script>-->
+
+
+    <script>
+        
+		var participant_id = "None";
+		var conversation_uuid = guid(); // Unique identifier of this conversation - for logging
+		var isMuted = true;
+
+		var prob_reaction = 0.3; // Percentage of all possible reactions that are used -> the higher, the more reactions, Harbor becomes more social
+		var reaction_indices = []; // A list of dialogue indices for which reactions should be shown
+		
+		var dialogue_position = 0;
+		var latest_answer = "Default";
+    	//var wasReaction = false;
+		var dialogue = [];
+
+    	$( document ).ready(function() {
+	    	console.log( "ready!" );
+
+            loadSurvey("{{survey_file}}");
+
+            //dialogue = JSON.parse(data)
+            //console.log("JSON DIAL:"+dialogue[0].text); 
+
+            /*$.getJSON("conv_survey.json", function(json) {
+                dialogue = json // this will show the info it in firebug console
+                console.log("LOADED JSON");
+            });*/
+
+            //Give it a name
+            var e = document.getElementById("top_name_tag");
+            if (e) {
+                e.innerHTML = bot_name;
+            }
+
+            //Change the button to have the name
+            var e = document.getElementById("test_button");
+            if (e) {
+                e.innerHTML = "Test dialogue";
+            }
+		  
+			var sel = document.getElementById('languages');
+			for(var i = 0; i < languages.length; i++) {
+			    var opt = document.createElement('option');
+			    opt.innerHTML = languages[i];
+			    opt.value = languages[i];
+			    sel.appendChild(opt);
+			}
+
+			fillVoices();
+
+			document.getElementById("speech_speed").value = 100.0;
+
+	    	/* https://docs.botui.org/guide.html */
+	    	botui = new BotUI('hello-world');
+	    	
+		    //console.log("D1-text:"+dialogue[0]["text"]+", type:"+dialogue[0]["type"]);
+		    //console.log("D2-text:"+dialogue[1]["text"]+", type:"+dialogue[1]["type"]);
+
+			var arg_prob_soc = findGetParameter("sociality");
+			if (arg_prob_soc != null) {
+				prob_reaction = arg_prob_soc;
+				console.log("^^^ PROVIDED SOCIALITY SETTING IN URL: "+prob_reaction+" ^^^");
+			}
+
+			console.log("Assigning reaction decisions...");
+			decideReactions(prob_reaction);
+			console.log("Reaction indices:"+reaction_indices);
+			if (reaction_indices.includes(reaction_indices[3])) {
+				console.log("In array success!!!"); 
+			}
+		  });
+		  
+		//Helper fubction to extract GET params from URL
+		function findGetParameter(parameterName) {
+			var result = null,
+				tmp = [];
+			var items = location.search.substr(1).split("&");
+			for (var index = 0; index < items.length; index++) {
+				tmp = items[index].split("=");
+				if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+			}
+			return result;
+		}
+
+		//Helper function to shuffle an array
+		function shuffle(a) {
+			var j, x, i;
+			for (i = a.length - 1; i > 0; i--) {
+				j = Math.floor(Math.random() * (i + 1));
+				x = a[i];
+				a[i] = a[j];
+				a[j] = x;
+			}
+			return a;
+		}
+
+		//Randomly selects the indices from the dialogue for which reactions will be shown
+		function decideReactions(prob) {
+			//1. reactable_indices = make a list of candidate utternces with reaction blocks
+			console.log("Checking all dialogue acts to extract reactionable indices")
+			var reactable_indices = [] //keept indixes of dialoge acts that have reactions
+			for (var i in dialogue) {
+				if ('reactions' in dialogue[i]) {
+					console.log("["+i+"]:"+dialogue[i].text.substring(0,5)+"... , Type:"+dialogue[i].type);
+					reactable_indices.push(i);
+				}
+			}
+			console.log("React len:"+reactable_indices.length+", indices:"+reactable_indices);
+
+			//2. Shuffle the indices to make it random
+			shuffle(reactable_indices);
+			console.log("Shuffled indices:"+reactable_indices);
+			
+			//3. Select the first num_reactions indices as the ones for which Harbor will give reactions
+			var num_reactions = Math.round(prob_reaction*reactable_indices.length);
+			console.log("Num reactions to select:"+num_reactions); 
+			for (var i=0; i < num_reactions; i++) {
+				//console.log("Index selected:"+reactable_indices[i]);
+				reaction_indices.push(reactable_indices[i]); 
+			}
+			reaction_indices.sort(function(a, b){return a-b});
+		}
+
+	  	var botui;
+        var calc_delay = 0;
+	  	var languages = ['en', 'es'];
+                var azureVoices = [ 
+	  				{text:"Zira (en-us)", value:"Microsoft Server Speech Text to Speech Voice (en-US, ZiraRUS)"},
+					{text:"Jessa (en-us)", value: "Microsoft Server Speech Text to Speech Voice (en-US, JessaRUS)"},
+					{text:"Benjamin (en-us)", value: "Microsoft Server Speech Text to Speech Voice (en-US, BenjaminRUS)"},
+					
+					{text:"Laura (es-es)", value: "Microsoft Server Speech Text to Speech Voice (es-ES, Laura, Apollo)"},
+					{text:"Helena (es-es)", value: "Microsoft Server Speech Text to Speech Voice (es-ES, HelenaRUS)"},
+					{text:"Apollo (es-es)", value: "Microsoft Server Speech Text to Speech Voice (es-ES, Pablo, Apollo)"},
+					{text:"HildaRUS (es-mx)", value: "Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)"},
+					{text:"Raul, Apollo (es-mx)", value: "Microsoft Server Speech Text to Speech Voice (es-MX, Raul, Apollo)"}
+		];
+
+		function fillVoices() {
+			var e = document.getElementById("languages");
+			var lang = e.options[e.selectedIndex].value;
+			console.log("Language selected:"+lang);
+
+			var range = [0, azureVoices.length];
+			if (lang == "en") {
+				range = [0, 3];
+			} else if (lang == "es") {
+				range = [3, azureVoices.length];
+			}
+
+			console.log("Range for lang: "+range[0]+" - "+range[1]);
+
+			var sel = document.getElementById('voices');
+			sel.innerHTML = "";
+			for(var i = range[0]; i < range[1]; i++) {
+			    var opt = document.createElement('option');
+			    opt.innerHTML = azureVoices[i].text;
+			    opt.value = azureVoices[i].value;
+			    sel.appendChild(opt);
+			}
+		}
+
+		function edit_selection(position) {
+			pauseAudio(true);
+			console.log("Check if not trying to edit the question that is already being edited?");
+			if (position != dialogue_position) {
+                //pauseAudio(); // Pause audio - cases crash
+				console.log("Enter edit mode...");
+				console.log("edit_selection: " + position);
+				console.log("edit_selection prev: " + previous_dialogue_position);
+				console.log("edit_selection dialogue: " + dialogue_position);
+				if (previous_dialogue_position < dialogue_position) {
+					previous_dialogue_position = dialogue_position;
+				}
+				dialogue_position = position;
+                dialogue[position]['edit'] = true;
+
+				console.log("edit_selection: " + position);
+				console.log("edit_selection prev: " + previous_dialogue_position);
+				console.log("edit_selection dialogue: " + dialogue_position);
+
+				var e = document.getElementById("languages");
+				var lang = e.options[e.selectedIndex].value;
+				removeUtilButtons();
+				
+				progressDialogue(position, false);
+				return true;
+			} else {
+				console.log("Skipping edit more, because this question is already being edited!");
+				return false;
+			}
+		}
+
+	  	function getCurrentVoice() {
+			var voice = "Microsoft Server Speech Text to Speech Voice (en-US, ZiraRUS)"
+			//Try to get it from element
+	  		var e = document.getElementById("voices");
+			if (e) {
+				voice = e.options[e.selectedIndex].value;
+			} else {
+				console.log("Using default voice");
+			}
+
+			return voice;
+		}
+
+		function getSpeechSpeed() {
+			var speech_speed = 100;
+			var e = document.getElementById("speech_speed");
+			if (e) {
+				speech_speed = e.value;
+			} else {
+				console.log("No speech speed elem, defaulting to: "+speech_speed);
+			}
+
+			return speech_speed;
+		}
+
+        function stopAudio(id, q_id, message, isAlt) {
+        	//console.log("Audio stopped for id:"+id)
+			document.getElementById('play_'+id).innerHTML = 'volume_mute';
+
+			logEventToServer({
+				'event-type':'q-audio-stopped',
+				'timestamp':new Date().getTime(),
+				'q-id':q_id,
+				'q-text':message,
+				'q-alt':isAlt,
+				'dialogue-position':dialogue_position,
+				'audio-id':id
+			}); 
+		}
+
+        function playElem(audio_file, id, q_id, message, isAlt){
+       		//console.log("Playing for elem:"+id);
+       		var audio = document.getElementById('audio_'+id);
+
+	        if (audio.paused) {
+	        	audio.src = audio_file; //"./static/audio/text.wav";
+	            audio.play();
+				document.getElementById('play_'+id).innerHTML = "volume_up";
+
+				voice = getCurrentVoice();
+				var re = /[A-Za-z0-9_-]+(?=,)/g;
+				var myArray = voice.match(re);
+				var lang = myArray[0];
+
+				speech_speed = getSpeechSpeed();
+
+				logEventToServer({
+					'event-type':'q-audio-play',
+					'timestamp':new Date().getTime(),
+					'q-id':q_id,
+					'q-text':message,
+					'q-alt':isAlt,
+					'dialogue-position':dialogue_position,
+					'lang':lang,
+					'voice':voice,
+					'speech-speed':speech_speed,
+					'audio-file':audio_file,
+					'audio-id':id
+				}); 
+
+	        } else{
+	            audio.pause();
+	            audio.currentTime = 0
+				document.getElementById('play_'+id).innerHTML = 'volume_mute';
+				
+				logEventToServer({
+					'event-type':'q-audio-paused',
+					'timestamp':new Date().getTime(),
+					'q-id':q_id,
+					'q-text':message,
+					'q-alt':isAlt,
+					'dialogue-position':dialogue_position,
+					'audio-file':audio_file,
+					'audio-id':id
+				}); 
+	        }
+
+	        audio.addEventListener('ended', function(){ stopAudio(id, q_id, message, isAlt); });
+        }
+
+        function downloadPlay(message, id, q_id, isAlt){
+        	
+        	//console.log("Running downloadPlay with message:"+message)
+		 	
+		 	if (message) {
+ 				voice = getCurrentVoice();
+				//console.log("Current voice:"+voice);
+
+				var re = /[A-Za-z0-9_-]+(?=,)/g;
+				var myArray = voice.match(re);
+				var lang = myArray[0];
+				//console.log("Lang:"+lang);
+
+				speech_speed = getSpeechSpeed();//document.getElementById("speech_speed").value;
+				speed_reduction = 100.00 - speech_speed
+				//console.log("Speed reduction:"+speed_reduction)
+
+				//console.log("*** ALL TTS DATA: \ntext:"+message+",\nvoice:"+voice+",\nlang:"+lang+",\nspeed_reduction:"+speed_reduction);
+
+				var request = $.ajax({
+			        url: "http://34.73.108.214/ttsRequest",
+			        type: "GET",
+			        data: {text: message, voice: voice, lang: lang, speed_reduction: speed_reduction},
+			        dataType: "html",
+			        async: true, 
+			        success : function (msg)
+			        {
+			          	//console.log("Called TTS successfully!")
+			          	var obj = JSON.parse(msg);
+
+			          	console.log("Audio file from TTS in HTML: "+obj.audio_file);
+			          	playElem("http://34.73.108.214/"+obj.audio_file, id, q_id, message, isAlt);
+			        }
+			    });
+
+			}
+        }
+
+	  	function restartDialogue() {
+	    	console.log("Restarting the dialogue...");
+	    	  
+	    	dialogue_position = 0;
+	    	previous_dialogue_position = 0; 
+	    	//botui.message.removeAll();
+			progressDialogue();
+			
+			//get todays date and time to log to the server
+			var today = new Date();
+			var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+			var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+			//var dateTime = date+' '+time;
+
+			/*logEventToServer({
+				'event-type':'start-conversation',
+				'date': date,
+				'time': time,
+				'timestamp':new Date().getTime(),
+				'pid': participant_id,
+			});*/ 
+
+			//console.log("----STARTING CONVERSATION----");
+			//console.log("--> sending PID: "+participant_id);
+
+
+	    	var e = document.getElementById("start_button");
+	    	if (e) {
+	    		e.style.display = "none";
+	    	}
+
+		  }
+		  
+		  //Helper function to generate GUID for this conversation
+		  function guid() {
+			  function s4() {
+				  return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+				}
+				return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+            }
+            
+            //Function that triggers upload to Redcap of all events in this conversation
+            function uploadEventsToRedCap(convComplete = false) {
+                /*console.log("%c Triggered upload to RedCap for "+participant_id+" at pos:"+dialogue_position+"...", 'color:orange');
+
+                //Loop through the dialogue to collect all the user answers
+                var q_answers = [];
+                //console.log("%c ---Collected answers---", 'color:red');
+                for (var i in dialogue) {
+				    if ('answer' in dialogue[i]) {
+					    //console.log("["+i+"]:"+dialogue[i].text.en.substring(0,5)+"... , Answer :"+dialogue[i].answer);
+					    q_answers.push( {
+                            'id': i,
+                            'question': dialogue[i].text.en,
+                            'answer': dialogue[i].answer,
+                            'explain': ('explain' in dialogue[i]),
+                            'edit': ('edit' in dialogue[i])
+                        });
+				    }
+                }
+                //console.log("---End answers---");
+                console.table(q_answers);
+                
+                var request = $.ajax({
+			        url: "http://34.73.108.214/uploadToRedCap",
+					type: "POST",
+					// conv_id identifies this unique conversation, on the server it adds an event to the JSON file identofied by this id
+					// the data needs to be a properly formatted JSON, otherwise the server will complain
+                    data: { conv_id: conversation_uuid,
+                            p_id: participant_id, 
+                            q_answers: JSON.stringify(q_answers),
+                            conv_complete: (convComplete==true) ? '2' : '0'},
+			        dataType: "html",
+			        async: true, 
+			        success : function (msg)
+			        {
+			          	//("Called log event successfully!");
+                        console.log("%c RESPONSE FROM REDCAP upload", 'color:red; font-weight:bold');
+                        console.log(msg);
+			          	var obj = JSON.parse(msg);
+
+						//check server response, it should have status="OK", otherwise it will be status="error" and a message with error description
+						//console.log("Response status: "+obj.status);
+						if (obj.status !== "OK") {
+						    console.log("Upload to RedCap failed: "+obj.message);
+						} else {
+                            console.log("Upload to RedCap successful!");
+                        }
+			        }
+			    });*/
+            }
+
+			//Function to log the event to server using AJAX
+			function logEventToServer(event) {
+			  //console.log("Logging event to server: "+event+", conversation uuid: "+conversation_uuid);
+
+			  /*var request = $.ajax({
+			        url: "http://34.73.108.214/logErEvent",
+					type: "GET",
+					// conv_id identifies this unique conversation, on the server it adds an event to the JSON file identofied by this id
+					// the data needs to be a properly formatted JSON, otherwise the server will complain
+			        data: {conv_id: conversation_uuid, data: JSON.stringify(event)},
+			        dataType: "html",
+			        async: true, 
+			        success : function (msg)
+			        {
+			          	//("Called log event successfully!");
+			          	var obj = JSON.parse(msg);
+
+						//check server response, it should have status="OK", otherwise it will be status="error" and a message with error description
+						  //console.log("Response status: "+obj.status);
+						  if (obj.status !== "OK") {
+							  console.log("Something went wrong and event did not log: "+obj.message);
+						  }
+			        }
+			    });*/
+		  }
+
+	  	function progressDialogue(givenPosition = dialogue_position, alt = false, isReaction = false) {
+	  		console.log("Progressing dialogue, current position: "+ givenPosition);
+	  		//playEmotion(); 
+	  		//var e = document.getElementById("languages");
+			var lang = 'en';//e.options[e.selectedIndex].value;
+			//console.log("Language selected:"+lang);
+			//console.log("Voice selected: "+getCurrentVoice());
+
+            //We actually never reach this - as progressDialogue is not called in handling "End"
+	  		if (givenPosition > dialogue.length) {
+                console.log("Dialogue ended!");
+	  			return;
+            } 
+
+            //Trigger upload of events to RedCap every 5 questions
+            if (givenPosition % 5 == 4) {
+                uploadEventsToRedCap();
+            }
+              
+	  		var bar = document.getElementsByClassName("botui-actions-container")[0];
+	  		bar.style.display = "none"
+
+	  		msg_spec = {};
+	  		
+	  		if(dialogue_position !== 0){
+	  			msg_spec['loading'] = true;
+			}
+
+			// Set the correct response type to handle the block
+			responseType = dialogue[givenPosition]['type'];
+				
+            //Handing an immediate reaction to a response
+            if (isReaction == true) {
+                responseType = "Reaction"; //This is a reaction, change a response type for question
+                if (latest_answer in dialogue[givenPosition]["reactions"]) {
+                    msg_spec['content'] = dialogue[givenPosition]["reactions"][latest_answer];
+                } else {
+                    //No matching text for this answer option, this should not happen, the check in response should not allow this!
+                    msg_spec['content'] = "Missing matching reaction text for answer option: "+latest_answer;
+                }
+            } else {
+                if(alt) {
+                    msg_spec['content'] = dialogue[givenPosition]['altText'];
+                } else {
+                    msg_spec['content'] = dialogue[givenPosition]['text'];
+                }
+            }
+	  		
+	  		//msg_spec['delay'] = delay * (100.0/getSpeechSpeed());
+	  		msg_spec['delay'] = calc_delay;//setDelay(alt, wasReaction, givenPosition, lang) * (100.0/getSpeechSpeed());
+	  		//wasReaction = isReaction;
+			console.log("-["+givenPosition+"]-Message:"+msg_spec['content']+", delay:"+msg_spec['delay']);
+			/*if(dialogue[givenPosition]['type'] === "Image") {
+	  			msg_spec = {};
+	  			msg_spec['content'] = 'Here is an image ![product image](https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)'
+	  		}*/
+
+            calc_delay = setDelay(alt, isReaction, givenPosition, lang) * (100.0/getSpeechSpeed());
+
+
+	  		botui.message.add(msg_spec).then(function (index) {
+	  			addID();
+	  			if(givenPosition != 0) {
+	  				toggleAudioIcon();
+	  			}
+				  if (!(dialogue[givenPosition]['type'] === "Image")){
+				  	addPlay(msg_spec['content'], givenPosition, alt);
+				  }
+				  
+				  logEventToServer({
+					'event-type':'q-asked',
+					'timestamp':new Date().getTime(),
+					'q-id':givenPosition,
+					'lang':lang,
+					'q-text':msg_spec['content'],
+					'q-answer-type':responseType,
+					'q-alt':alt
+					});
+
+	  			switch (responseType) {
+	  				case "Image":
+	  					console.log("Adding image.");
+						if(!alt) {
+		  					if (previous_dialogue_position != 0) {
+		  						dialogue_position = previous_dialogue_position;
+		  						previous_dialogue_position = 0;
+		  					} else {
+			  					dialogue_position += 1;
+			  				}
+		  					progressDialogue();
+						  }
+						break;
+	  				case "Skip":
+					case "Reaction": //Reaction is the same as skip from the perspective of what follows the text
+	  					//console.log("Auto progress message...");
+	  					if(!alt) {
+		  					if (previous_dialogue_position != 0) {
+		  						dialogue_position = previous_dialogue_position;
+		  						previous_dialogue_position = 0;
+		  					} else {
+								//Does the response have jump conditions
+								if ("jumpConditions" in dialogue[givenPosition]) {
+									console.log("PROCESSING JUMP CONDITIONS...")
+									console.log("The latest answer I have:"+latest_answer);
+									//Check if we have this answer option, if not that is programmers error!
+									if (latest_answer in dialogue[givenPosition]["jumpConditions"]) {
+										console.log("-> [Before JUMP] - position:", dialogue_position);
+										console.log("Jump value raw: "+dialogue[givenPosition]["jumpConditions"][latest_answer]["steps"]);
+										console.log("Jump value parsed: "+parseInt(dialogue[givenPosition]["jumpConditions"][latest_answer]["steps"]));
+										dialogue_position += parseInt(dialogue[givenPosition]["jumpConditions"][latest_answer]["steps"]) || 1;
+										console.log("-> [After JUMP] - position:", dialogue_position);
+									} else {
+										console.log("No jump for this option...");
+										//No jump for this answer option, progress at a normal pace
+										dialogue_position += 1;
+									} 
+								} else { // No jump conditions
+									dialogue_position += 1;
+								}
+			  				}
+		  					progressDialogue();
+						  }
+						  console.log("Automated skip...");
+						  /*logEventToServer({
+							'event-type':'q-answered',
+							'timestamp':new Date().getTime(),
+							'q-id':givenPosition,
+							'lang':lang,
+							'q-answer-type':dialogue[givenPosition]['type'],
+							'q-answer':"Automated-Skip"
+							});*/
+
+	  					break;
+	  				case "End":					  
+						  //Log end of the conversation
+						  //get todays date and time to log to the server
+							var today = new Date();
+							var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+							var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+							//var dateTime = date+' '+time;
+							
+							logEventToServer({
+								'event-type':'end-conversation',
+								'date': date,
+								'time': time,
+								'timestamp':new Date().getTime()
+                            });
+                            
+                            //Upload everything and mark conversation as complete
+                            uploadEventsToRedCap(true); // trigger upload to RedCap at the end
+
+							break 
+					case "Confirmation":
+						showActionBar();
+	  					//console.log("Confirm type of response..." + givenPosition);
+						if(!alt) {
+	  						addUtilButtons(givenPosition, true);//, false, true);
+	  					}
+	  					var buttons_lang = [
+						    { // show only one button
+						    	text: 'Continue',
+						      	value: 'Continue',
+						      	position: givenPosition
+						    }
+						  ]
+	  					if (lang == "es") {
+	  					buttons_lang = [
+						    { // show only one button
+						    	text: 'Continuar',
+						      	value: 'Continue',
+						      	position: givenPosition
+						    }
+						  ]
+	  					}	
+
+	  					botui.action.button({ action: buttons_lang
+						  }).then(function (res) { // will be called when a button is clicked.
+							pauseAudio();
+							if (!alt) {
+								removeUtilButtons();
+							}
+
+							logEventToServer({
+								'event-type':'q-answered',
+								'timestamp':new Date().getTime(),
+								'q-id':givenPosition,
+								'lang':lang,
+								'q-answer-type':dialogue[givenPosition]['type'],
+								'q-answer':res.text
+							}); 
+							
+							//console.log("Got value from Confirmation:" + res.value); // will print "one" from 'value'
+                            latest_answer = res.value;
+                            //Log answer in the dialogue structure itself
+                            dialogue[givenPosition]['answer'] = res.value;
+                            
+		  					if (previous_dialogue_position != 0) {
+                                dialogue_position = previous_dialogue_position;
+		  						previous_dialogue_position = 0;
+		  					} else {
+			  					dialogue_position += 1;
+			  				}
+		  					progressDialogue();
+						});
+						break;
+	  				case "Yes/No":
+	  					showActionBar();
+	  					if(alt) {
+	  						addUtilButtons(givenPosition, true);
+	  					} else {
+	  						addUtilButtons(givenPosition, true);
+	  					}
+	  					console.log("Yes/No type of response..." + givenPosition)
+	  					var buttons_lang = [
+						    { // show only one button
+						    	text: 'Yes',
+						      	value: 'Yes',
+						      	position: givenPosition
+						    },
+						    {
+						    	text: 'No',
+						      	value: 'No',
+						      	position: givenPosition
+						    }
+						  ]
+	  					if (lang == "es") {
+	  					buttons_lang = [
+						    { // show only one button
+						    	text: 'Sí',
+						      	value: 'Yes',
+						      	position: givenPosition
+						    },
+						    {
+						    	text: 'No',
+						      	value: 'No',
+						      	position: givenPosition
+						    }
+						  ]
+	  					}	
+
+	  					botui.action.button({ action: buttons_lang
+	  						
+						}).then(function (res) { // will be called when a button is clicked.
+							pauseAudio();
+							removeUtilButtons();
+
+							logEventToServer({
+								'event-type':'q-answered',
+								'timestamp':new Date().getTime(),
+								'q-id':givenPosition,
+								'lang':lang,
+								'q-answer-type':dialogue[givenPosition]['type'],
+								'q-answer':res.text
+							}); 
+							 
+							console.log("Got value from Yes/No:" + res.value); // will print "one" from 'value'
+                            latest_answer = res.value;
+                            //Log answer in the dialogue structure itself
+                            dialogue[givenPosition]['answer'] = res.value;
+
+			  				if (res.text === "Explain") {
+			  					progressDialogue(givenPosition, true);
+			  				} 
+			  				else {
+								//This block has a reaction, first process this before jumping back
+								isProgressDialogue = true;
+								//Should it react to this response?
+								//console.log("#### CHECK IF TO REACT #### - "+givenPosition+", ri: "+reaction_indices);
+								//if (reaction_indices.includes(''+givenPosition)) {
+									//console.log("-> Checking if there are reactions...");
+									if ('reactions' in dialogue[givenPosition] ) {
+										console.log("---Block has REACTIONS, processing....");
+										if (latest_answer in dialogue[givenPosition]["reactions"]) {
+											console.log("Response has a reaction!!!");
+											isProgressDialogue = false;
+											progressDialogue(givenPosition, false, true);
+										}
+									}
+								//}
+
+								if (isProgressDialogue == true) {
+									console.log("---NO REACTIONS, progressing dialogue as normal...");
+									if (previous_dialogue_position != 0) {
+										dialogue_position = previous_dialogue_position;
+										previous_dialogue_position = 0;
+									} else {
+										dialogue_position += 1;
+									}
+									progressDialogue();
+								}
+			  				}
+						});
+						break;
+					case "Input":
+						showActionBar();
+						if(alt) {
+	  						addUtilButtons(givenPosition, true);
+	  					} else {
+	  						addUtilButtons(givenPosition, true);
+	  					}
+	  					console.log("Input type of response...")
+	  					botui.action.text({
+	  						action: [
+						    { // show only one button
+						    	placeholder: 'Enter your salary here',
+								sub_type: 'number',
+						    	position: givenPosition
+						    }
+						  ]
+						}).then(function (res) { // will be called when a button is clicked.
+							pauseAudio();
+							removeUtilButtons();
+
+							logEventToServer({
+								'event-type':'q-answered',
+								'timestamp':new Date().getTime(),
+								'q-id':givenPosition,
+								'lang':lang,
+								'q-answer-type':dialogue[givenPosition]['type'],
+								'q-answer':res.value
+							}); 
+
+							console.log("Got value from Input:" + res.value); // will print "one" from 'value'
+                            latest_answer = res.value;
+                            //Log answer in the dialogue structure itself
+                            dialogue[givenPosition]['answer'] = res.value;
+
+		  					if (previous_dialogue_position != 0) {
+		  						dialogue_position = previous_dialogue_position;
+		  						previous_dialogue_position = 0;
+		  					} else {
+			  					dialogue_position += 1;
+			  				}
+							progressDialogue();
+						});
+						break;
+					case "Input_Num_Small":
+						showActionBar();
+						if(alt) {
+	  						addUtilButtons(givenPosition, true);
+	  					} else {
+	  						addUtilButtons(givenPosition, true);
+	  					}
+	  					console.log("Input NUM SMALL type of response...")
+	  					botui.action.text({
+	  						action: [
+						    { // show only one button
+						    	placeholder: 'Enter your salary here',
+								sub_type: 'number',
+						    	position: givenPosition
+						    }
+						  ]
+
+						}).then(function (res) { // will be called when a button is clicked.
+							pauseAudio();
+							removeUtilButtons();
+
+							logEventToServer({
+								'event-type':'q-answered',
+								'timestamp':new Date().getTime(),
+								'q-id':givenPosition,
+								'lang':lang,
+								'q-answer-type':dialogue[givenPosition]['type'],
+								'q-answer':res.value
+							}); 
+
+							console.log("Got value from Input NUM SMALL:" + res.value); // will print "one" from 'value'
+                            latest_answer = res.value;
+                            //Log answer in the dialogue structure itself
+                            dialogue[givenPosition]['answer'] = res.value;
+
+							// check if response is a reasonable number
+							let isValid = true;
+							let response = Number(res.value);
+
+							if (isNaN(response) || response < 0 || response > 110) {
+								isValid = false;
+							}
+							console.log("Is valid response -- INPUT NUM SMALL: " + isValid);
+							if (isValid) {
+								if (previous_dialogue_position != 0) {
+		  							dialogue_position = previous_dialogue_position;
+		  							previous_dialogue_position = 0;
+		  						} else {
+			  						dialogue_position += 1;
+			  					}
+								progressDialogue();
+							} else {
+								let message = warningMessageSmall(res.value);
+                                botui.message.add({
+									content: message,
+									delay: 1000,
+									loading: true
+								}).then(function () {
+                                    calc_delay = calcDelay(message, isMuted);
+                                    addPlay(message, givenPosition, false);
+									progressDialogue();
+								});
+							}
+                        });
+                        break;
+					case "Input_Num_Large":
+						showActionBar();
+						if(alt) {
+	  						addUtilButtons(givenPosition, true);
+	  					} else {
+	  						addUtilButtons(givenPosition, true);
+	  					}
+	  					console.log("Input type of response...");
+	  					console.log("Input NUM LARGE type of response...");
+	  					botui.action.text({
+	  						action: [
+						    { // show only one button
+						    	placeholder: 'Enter your salary here',
+								sub_type: 'number',
+						    	position: givenPosition
+						    }
+						  ]
+						}).then(function (res) { // will be called when a button is clicked.
+							pauseAudio();
+							removeUtilButtons();
+
+							logEventToServer({
+								'event-type':'q-answered',
+								'timestamp':new Date().getTime(),
+								'q-id':givenPosition,
+								'lang':lang,
+								'q-answer-type':dialogue[givenPosition]['type'],
+								'q-answer':res.value
+							}); 
+
+							console.log("Got value from Input NUM LARGE:" + res.value); // will print "one" from 'value'
+                            latest_answer = res.value;
+                            //Log answer in the dialogue structure itself
+                            dialogue[givenPosition]['answer'] = res.value;
+
+							// check if response is a reasonable number
+							let isValid = true;
+							let response = Number(res.value);
+
+							if (isNaN(response) || response < 0 || response > 1000000) { //assuming we aren't getting millionaires here
+								isValid = false;
+							}
+							console.log("Is valid response -- INPUT NUM LARGE: " + isValid);
+							if (isValid) {
+								if (previous_dialogue_position != 0) {
+		  							dialogue_position = previous_dialogue_position;
+		  							previous_dialogue_position = 0;
+		  						} else {
+			  						dialogue_position += 1;
+			  					}
+								progressDialogue();
+							} else {
+								let message = warningMessageLarge(res.value);                               
+                                botui.message.add({
+									content: message,
+									delay: 1000,
+									loading: true
+								}).then(function () {
+									calc_delay = calcDelay(message, isMuted);
+                                    addPlay(message, givenPosition, false);
+									progressDialogue();
+								});
+							}
+						});
+						/*var inputBox = document.getElementsByClassName('botui-actions-text-input')[0];
+	  					console.log(inputBox);
+	  					inputBox.addEventListener('onchange', checkInput());*/
+						break;
+					case "Options":
+						showActionBar();
+						if(alt) {
+	  						addUtilButtons(givenPosition, true);
+	  					} else {
+	  						addUtilButtons(givenPosition, true);
+	  					}
+	  					console.log("Options type of response...2")
+						dialogue[givenPosition]["options"].forEach(function(part, index) {
+						  // part and arr[index] point to the same object
+						  // so changing the object that part points to changes the object that arr[index] points to
+						  part.position = givenPosition;
+						});
+						responseOptions = dialogue[givenPosition]["options"];
+
+	  					botui.action.button({
+	  						action: responseOptions
+						}).then(function (res) { // will be called when a button is clicked.
+							pauseAudio();
+							removeUtilButtons();
+
+							logEventToServer({
+								'event-type':'q-answered',
+								'timestamp':new Date().getTime(),
+								'q-id':givenPosition,
+								'lang':lang,
+								'q-answer-type':dialogue[givenPosition]['type'],
+								'q-answer':res.text
+							}); 
+
+							console.log("Got value from Options:" + res.value); // will print "one" from 'value'
+                            latest_answer = res.value;
+                            //Log answer in the dialogue structure itself
+                            dialogue[givenPosition]['answer'] = res.text;
+
+							//This block has a reaction, first process this before jumping back
+							isProgressDialogue = true;
+							//Should it react to this response?
+							console.log("#### CHECK IF TO REACT #### - "+givenPosition+", ri: "+reaction_indices);
+							//if (reaction_indices.includes(''+givenPosition)) {
+							//	console.log("-> Checking if there are reactions...");
+								if ('reactions' in dialogue[givenPosition] ) {
+									console.log("---Block has REACTIONS, processing....");
+									if (latest_answer in dialogue[givenPosition]["reactions"]) {
+										console.log("Response has a reaction!!!");
+										isProgressDialogue = false;
+										progressDialogue(givenPosition, false, true);
+									}
+								}
+							//}
+
+							if (isProgressDialogue == true) {
+								console.log("---NO REACTIONS, progressing dialogue as normal...");
+
+								//console.log("edit_selection: " + givenPosition);
+								//console.log("edit_selection prev: " + previous_dialogue_position);
+								//console.log("edit_selection dialogue: " + dialogue_position);	
+
+								if (previous_dialogue_position != 0) {
+									dialogue_position = previous_dialogue_position;
+									previous_dialogue_position = 0;
+								} else {
+									//Does the response have jump conditions
+									if ("jumpConditions" in dialogue[givenPosition]) {
+										console.log("PROCESSING JUMP CONDITIONS...")
+										console.log("The latest answer I have:"+latest_answer);
+										//Check if we have this answer option, if not that is programmers error!
+										if (latest_answer in dialogue[givenPosition]["jumpConditions"]) {
+											console.log("-> [Before JUMP] - position:", dialogue_position);
+											console.log("Jump value raw: "+dialogue[givenPosition]["jumpConditions"][latest_answer]["steps"]);
+											console.log("Jump value parsed: "+parseInt(dialogue[givenPosition]["jumpConditions"][latest_answer]["steps"]));
+											dialogue_position += parseInt(dialogue[givenPosition]["jumpConditions"][latest_answer]["steps"]) || 1;
+											console.log("-> [After JUMP] - position:", dialogue_position);
+										} else {
+											console.log("No jump for this option...");
+											//No jump for this answer option, progress at a normal pace
+											dialogue_position += 1;
+										} 
+									} else { // No jump conditions
+										dialogue_position += 1;
+									}
+								}
+								
+								progressDialogue();
+
+								
+								/*if (res.text === "I do not have a steady place to live.") {
+									dialogue_position += 2;
+									progressDialogue();
+								} else if (res.text === "Never true" && msg_spec['content'] === "Within the past 12 months the food you bought just didn't last and you didn't have money to get more. Was this:") {
+									dialogue_position += 1;
+									progressDialogue();
+								} else {*/
+								
+								//}
+								//(res.text === "Explain") ? progressDialogue(msg_delay, givenPosition, true) : progressDialogue(msg_delay);
+								//progressDialogue(msg_delay);
+							}
+						});
+						break;
+					case "Options-multiple":
+						showActionBar();
+						if(alt) {
+	  						addUtilButtons(givenPosition, true);
+	  					} else {
+	  						addUtilButtons(givenPosition, true);
+	  					}
+	  					console.log("Options type of response...1")
+	  					responseOptions = dialogue[givenPosition]["options"];
+
+	  					botui.action.select({
+	  						action: {
+	  							placeholder : "Select option",
+	  							value: [],//[dialogue[dialogue_position]["options"][0]],
+	  							searchselect : false,
+	  							multipleselect : true,
+	  							options: responseOptions,
+						      	position: givenPosition,
+	  							button: {
+						    		icon: 'check',
+						    		label: 'OK'
+						    	}
+						    }
+						}).then(function (res) { // will be called when a button is clicked.
+							pauseAudio();
+							removeUtilButtons();
+
+							logEventToServer({
+								'event-type':'q-answered',
+								'timestamp':new Date().getTime(),
+								'q-id':givenPosition,
+								'lang':lang,
+								'q-answer-type':dialogue[givenPosition]['type'],
+								'q-answer':res.text
+							}); 
+
+							console.log("Got value from Options-multiple:" + res.value); // will print "one" from 'value'
+                            latest_answer = res.value;
+                            //Log answer in the dialogue structure itself
+                            dialogue[givenPosition]['answer'] = res.text;
+
+			  				if (res.text === "Explain") {
+			  					progressDialogue(givenPosition, true); 
+			  				} 
+			  				else {
+			  					if (previous_dialogue_position != 0) {
+			  						dialogue_position = previous_dialogue_position;
+			  						previous_dialogue_position = 0;
+			  					} else {
+				  					dialogue_position += 1;
+				  				}
+			  					progressDialogue();
+			  				}
+
+						});
+						break;
+					default:
+						console.log("%c Unknown message type!!!", "color:red; font-weight:bold");
+
+	  			}
+	  		});
+	  	}
+
+	  	function playEmotion() {
+		    var myDiv = document.getElementById("botLogo");
+
+		      show = function(){
+		        myDiv.src = "";
+		        setTimeout(hide, 1500); // 5 seconds
+		      },
+
+		      hide = function(){
+		      myDiv.src = "./static/images/bot-selected.png";
+		    };
+
+		    show();
+
+		  }
+
+
+	  	function addPlay(message, q_id, isAlt) {
+	  		console.log("Adding play with message:"+message)
+	  		var elems = document.getElementsByClassName('botui-message');
+	      	var i = 0;
+	      	//console.log("Elems:"+elems.length);
+	      	if (elems.length>0) {
+      			var i = elems.length -1;
+
+	      		//console.log("el:"+i);
+
+	      		var audio_tag = document.createElement("audio");
+				audio_tag.id = "audio_"+i;
+                audio_tag.classList.add("audio_class");
+
+	      		var element = document.createElement("i");
+	      		
+	      		element.classList.add("material-icons");
+                element.classList.add("play_class");
+  				element.appendChild(document.createTextNode("volume_mute"));
+  				element.id = "play_"+i;
+  				
+  				element.style.width = "20px";
+  				element.style.fontSize = "28px";
+  				element.style.margin = "auto";
+  				element.style.cursor = "pointer";
+  				element.style.verticalAlign = "top";
+  				element.style.color = "#3676F4";
+  				
+  				element.onclick = function() {downloadPlay(message,i, q_id, isAlt)};
+				
+	      		elems[i].appendChild(audio_tag);
+	      		elems[i].appendChild(document.createTextNode( '\u00A0' ));
+	      		elems[i].appendChild(element);
+  				if (!isMuted) {
+                    downloadPlay(message,i,q_id,isAlt);
+                }
+  			}
+	  	}
+
+	  	function pauseAudio(isSkip = false) {
+	  		var elems = document.getElementsByClassName('botui-message');
+	  		if (isSkip) {
+	  			var i = elems.length -1;
+	  		} else {
+	  			var i = elems.length -2;
+	  		}
+	  		var audio = document.getElementById('audio_'+i);
+            audio.pause();
+            document.getElementById('play_'+i).innerHTML = 'volume_mute';
+
+            /*//Mute all audio being played if the user decided to answer, skip or edit past answer
+            var audios = document.getElementsByClassName('audio_class');
+            for (var a_id=0; a_id<audios.length; a_id++) {
+	  		    audios[a_id].pause();
+            }
+            var playIcons = document.getElementsByClassName('play_class');
+            for (playIcon in playIcons) {
+	  		    playIcon.innerHTML = 'volume_mute';
+            }*/
+	  	}
+
+	  	function toggleMute() {
+	  		isMuted = !isMuted;
+	  		console.log("Muting dialogue.");
+	  	}
+
+	  	// makes bottom bar disappear while there are no actions for the user
+	  	function showActionBar() {
+	  		var bar = document.getElementsByClassName("botui-actions-container")[0];
+	  		bar.style.display = "table-footer-group"
+	  	}
+	  	/*
+	  	function skipAudio(msg) {
+	  		var elems = document.getElementsByClassName('botui-message');
+	  		var i = elems.length - 2;
+	  		if(document.getElementById('play_'+i).innerHTML !== 'play_circle_outline') {
+				downloadPlay(msg, i);
+	  		}
+	  	}*/
+	  	// adds the skip and I don't understand buttons
+	  	function addUtilButtons(position, justSkip = false, justExplain = false) {
+			var container = document.getElementsByClassName('botui-actions-container')[0];
+	  		var elems = container.appendChild(document.createElement('div'));
+	  		elems.style.width = '25px';
+	  		elems.id = 'utilContainer';
+	  		var i = 0;
+	  		//if (elems.length>0) {
+      			if(!justExplain) {
+      				var element = document.createElement("div");
+		      		element.classList.add("material-icons");
+	  				element.appendChild(document.createTextNode("skip_next"));
+	  				var label = document.createElement("p");
+	  				label.appendChild(document.createTextNode("Skip"));
+	  				label.classList.add("util_label");
+	  				element.appendChild(label);
+	  				element.style.width = "20px";
+					element.style.fontSize = "32px";
+					element.style.cursor = "pointer";
+					element.style.verticalAlign = "top";
+					element.style.color = "#3676F4";
+	  				element.id = "skip_"+i;  			
+	  				element.onclick = function() { 
+	  					pauseAudio(true);
+	  					removeUtilButtons();
+	  					dialogue_position++;
+
+	  					botui.action.hide();
+	  					botui.message.human({ // show only one button
+					    	content: 'Skip',
+					    	delay: 100,
+					      	dialogue_position: position
+						});
+						console.log("User triggered skip!");
+	  					logEventToServer({
+							'event-type':'q-answered',
+							'timestamp':new Date().getTime(),
+							'q-id':position,
+							'lang':"en",
+							'q-answer-type':dialogue[position]['type'],
+							'q-answer':"Skip"
+                        }); 
+                        //Log answer in the dialogue structure itself
+                        dialogue[position]['answer'] = 'Skip';
+
+	  					progressDialogue(dialogue_position, false); 			
+	  				};
+		      		elems.appendChild(element);
+      			}
+	      		if(!justSkip || !(dialogue[position]['altText']) == undefined) { //only add if there is an alt text present
+	      			var element2 = document.createElement("div");
+		      		element2.classList.add("material-icons");
+  					element2.appendChild(document.createTextNode("help_outline"));
+  					var label = document.createElement("p");
+	  				label.appendChild(document.createTextNode("Explain"));
+	  				label.classList.add("util_label");
+	  				element2.appendChild(label);
+  					element2.style.width = "20px";
+					element2.style.fontSize = "32px";
+					element2.style.cursor = "pointer";
+					element2.style.verticalAlign = "top";
+					element2.style.color = "#3676F4";
+	  				element2.id = "explain_"+i;  				
+	  				element2.onclick = function() {
+	  					pauseAudio(true);
+	  					removeUtilButtons();
+	  					botui.action.hide();
+
+						console.log("User triggered explain!");
+	  					logEventToServer({
+							'event-type':'q-answered',
+							'timestamp':new Date().getTime(),
+							'q-id':position,
+							'lang':"en",
+							'q-answer-type':dialogue[position]['type'],
+							'q-answer':"Explain"
+                        }); 
+                        //Log answer in the dialogue structure itself
+                        dialogue[position]['explain'] = true;
+                            
+	  					progressDialogue(dialogue_position, true);
+	  				};
+
+		      		elems.appendChild(element2);
+	      		}
+  			}
+	  	//}
+
+	  	function removeUtilButtons() {
+	  		var elems = document.getElementsByClassName('botui-actions-container');
+	  		var element = document.getElementById('utilContainer');
+            if (element) {  
+                element.parentNode.removeChild(element);
+            }
+	  	}
+
+	  	// set delay of the message based on the length of the previous message
+	  	function setDelay(alt, isReaction, givenPosition, lang) {
+	  		console.log("Calculating delay for the future...");
+
+            var addDelay = 0;	
+            if(alt) {
+                message = dialogue[givenPosition]['altText'];
+            } else {
+                message = dialogue[givenPosition]['text'];
+                if ('delay' in dialogue[givenPosition]) {
+                    addDelay = dialogue[givenPosition]['delay'];
+                    console.log("  Added additional delay: "+addDelay);
+                }
+            }
+
+            if (isReaction) {
+                console.log("  ***IS REACTION****: "+dialogue[givenPosition]['type']);
+                try {
+                    message = dialogue[givenPosition]['reactions'][latest_answer];
+                } catch(err) {
+                    message = "Filler message for delay."
+                }
+            }
+
+            console.log("  ---->MSG: "+message);
+				
+            //If we had just text without answer, then wait for user to read
+            if (dialogue[givenPosition]['type'] == "Skip" || isReaction) {
+                delay = calcDelay(message, isMuted, addDelay);
+
+            //If there was a reply required, then user likely read the question already - no need to wait
+            } else {
+                delay = 500;
+            }
+
+            console.log("  Calculated delay: "+delay);
+
+	  		return delay;
+	  	}
+
+	  	function calcDelay(message, isMuted, addDelay=0) {
+	  		console.log("Calculating delay from messagg:"+message);
+	  		//var audio = document.getElementById('audio_' + dialogue_position);
+	  		//var delay =  audio.duration;
+            var delay = 0;
+
+            var length = message.length;
+            //console.log("  Old length: "+length);
+            var delay;
+            if (length <=20) {
+                delay = 3000;
+            } else if (length > 20 && length <= 50) {
+                delay = 4500;
+            } else if (length > 50 && length <= 100) {
+                delay = 5500;
+            } else if (length > 100 && length <= 150) {
+                delay = 6000;
+            } else if (length > 150 && length <= 200) {
+                delay = 6500;
+            } else {
+                delay = 9000;
+            }
+            //low = ~50, high ~200					
+            //CREATE FOR LOOP THAT LOOPS THROUGH STRING TO SEE HOW MANY PUNCTUATION MARKS, ADJUST DELAY ACCORDINGLY
+            if (isMuted) { delay = delay - 1500;} // reduces delay if speaking is off
+
+            console.log("  Old delay: "+delay);
+            length = message.split(' ').length;
+            console.log("  Length in words: "+length);
+            punctiation_delay = (message.match(/[,.!?-`]/g) || []).length*150 // 50ms for every point or comma
+            console.log("  Bonus delay for punctuation marks: "+punctiation_delay);
+            delay = Math.round((length/150)*60*1000) + punctiation_delay + addDelay;
+
+            if (isMuted) { 
+                console.log("  Audio is off, reducing delay...");
+                delay = delay - 1500 - punctiation_delay - addDelay;
+                if (delay < 500) {
+                    delay = 500;
+                }
+            } // reduces delay if speaking is off
+            console.log("  New delay: "+delay);
+            return delay;
+	  	}
+
+	  	// decreases opacity of old audio icons
+	  	function toggleAudioIcon() {
+	  		var elems = document.getElementsByClassName('material-icons');
+	  		var i = elems.length - 1;
+	  		var play = document.getElementsByClassName('material-icons')[i];
+	  		play.style.opacity = "0.15";
+	  	}
+
+	  	// adds unique ID to message element as it is created
+	  	function addID() {
+	  		var elems = document.getElementsByClassName('botui-message');
+	  		var i = elems.length - 1;
+	  		var message = document.getElementsByClassName('botui-message')[i];
+	  		message.id = "message_" + i;
+	  	}
+
+		function setPID() {
+			var pid = document.getElementById('participant_id').value;
+			console.log("PID:"+pid);
+			participant_id = pid;
+
+			document.getElementById('participant_id').style.display = "None";
+			document.getElementById('save_pid_button').style.display = "None";
+			//document.getElementById("start_button").style.display = "inline-block";
+		}
+
+		function warningMessageSmall(res) {
+			let response = Number(res);
+			let message = '';
+
+			if (isNaN(response)) {
+				message = 'I was expecting a number here. Please answer with just a number.'
+			} else if (response < 0) {
+				message = 'I was expecting a positive number here. Please respond with a positive number.'
+			} else if (response > 110) {
+				message = 'I was expecting a smaller number here. Please answer with a reasonable number.'
+			}
+			return message;
+		}
+
+		function warningMessageLarge(res) {
+			let response = Number(res);
+			let message = '';
+
+			if (isNaN(response)) {
+				message = 'I was expecting a number here. Please answer with just a number.'
+			} else if (response < 0) {
+				message = 'I was expecting a positive number here. Please respond with a positive number.'
+			} else if (response > 1000000) {
+				message = 'I was expecting a smaller number here. Please answer with a reasonable number.'
+			}
+			return message;
+		}
+
+		function addInputWarning(isNum) {
+			if (document.getElementsByClassName('warning-text') === null) { //if message is not there
+				var box = document.getElementsByClassName("botui-actions-container")[0];
+				var warningText = document.createElement('p');
+				if (isNum) {
+					warningText.appendChild(document.createTextNode("Only input numbers."));
+				} else {
+					warningText.appendChild(document.createTextNode("Only input text."));
+				}
+				warningText.classList.add('warning-text');
+				box.appendChild(warningText);
+			}
+		}
+
+		function checkInput() {
+			let text = Number(document.getElementsByClassName('botui-actions-text-input')[0].value);
+			if (isNaN(text)) {
+				addInputWarning();
+			}
+        }
+
+        function loadSurvey(survey_file) {
+            console.log("Loading survey: "+survey_file);
+
+            var request = $.ajax({
+                url: "/get_survey",
+                type: "GET",
+                data: {survey_file: survey_file, survey_source: "conv"},
+                dataType: "html",
+                async: true, 
+                success : function (msg)
+                {
+                    var obj = JSON.parse(msg);
+
+                    if (obj.status !== "OK") {
+                        console.log("Something went wrong and event did not log: "+obj.message);
+                    } else {
+                        //("Called log event successfully!");
+                        let obj = JSON.parse(msg);
+                        console.log("Survey load resp:");
+                        console.log(obj);
+                        dialogue = obj.survey_data;
+                       
+                        var e = document.getElementById("start_button");
+                        if (e) {
+                            e.style.display = "block";
+                        }
+                    }
+                }
+            });
+        }
+
+    </script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Options</h3>
+            </div>
+            <hr>
+            <ul class="list-unstyled components">
+               	<p>Language: <select id="languages" onchange="fillVoices()">
+		        </select></p> 
+
+		        <p>Voice: <select id="voices">
+		        </select></p>
+
+		        <p>Mute: <select id="mute" onchange="toggleMute()"><option value="Off">Off</option><option value="On">On</option>
+		        </select></p> 
+
+		        <p><span>Speaking speed:</span><input type="range" id="speech_speed" min="70" max="100"></p>
+		        <hr>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" >
+
+	    <!--- Top row/menu bar -->
+	  <!--  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top">
+
+                <div class="d-flex flex-row" style="width: 100%" > 
+                    <div class="pl-2">
+                        <img src="./static/images/bot-selected.png"  id="botLogo" class="pull-left" style="padding-top:10px; height:62px; width: 50px;" />
+                    </div>
+                    <div class="p-0 flex-fill align-content-center">
+                        <div class="classWithPad" >
+				            <h4 id="top_name_tag"></h4>
+                        </div>
+                    </div>
+                    <div class="p-0">
+				        <div class="pull-right" style="padding-top:15px;">
+                            <button class="btn btn-info pull-right" type="button" id="sidebarCollapse">
+                                <i class="material-icons" id="more">more_vert</i>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+	    </nav>-->
+
+
+               
+            </div> <!-- /ROW -->
+            <div class="row">  
+                <div class="col-lg-12">
+                    <button id="start_button" style="display:block;" type="button" onclick="return restartDialogue();">Talk to {{bot_name}}</button>	  
+
+                    <div class="botui-app-container text-left" id="hello-world" >
+                        <bot-ui ></bot-ui>
+                    </div>
+                </div>
+            </div> <!-- /ROW -->
+    
+        </div> <!-- /content -->
+    </div>
+
+    <div class="overlay"></div>
+
+
+
+    <!-- Popper.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.2.5/jquery.bootstrap-touchspin.min.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>  
+
+    <!--- SCRIPTS AND STUFFF -->
+
+    <!-- Vue - BotUI requires Vue to be present in page -->
+	<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+	<!-- BotUI - main file -->
+    <script src="./static/scripts/botui.min.js"></script>
+    
+    
+
+  </body>
+</html>

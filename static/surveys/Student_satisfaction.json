@@ -1,0 +1,102 @@
+[
+    { 
+        "//":"https://www.surveymonkey.com/mp/university-student-satisfaction-survey-template/?ut_source=mp&ut_source2=sample-survey-questionnaire-templates&ut_source3=survey-template-gallery",
+        "text": "How well do the professors teach at the university?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely well" },
+            {"value": "4", "text" : "Very well" },
+            {"value": "3", "text" : "Somewhat well"},
+            {"value": "2", "text" : "Not so well"},
+            {"value": "1", "text" : "Not at all well"}
+        ]
+    },
+    { 
+        "text": "How effective is the teaching outside your major at this university?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely effective" },
+            {"value": "4", "text" : "Very effective" },
+            {"value": "3", "text" : "Somewhat effective"},
+            {"value": "2", "text" : "Not so effective"},
+            {"value": "1", "text" : "Not at all effective"}
+        ]
+    },
+    { 
+        "text": "How well-maintained are the facilities at this university?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely well-maintained" },
+            {"value": "4", "text" : "Very well-maintained" },
+            {"value": "3", "text" : "Somewhat well-maintained"},
+            {"value": "2", "text" : "Not so well-maintained"},
+            {"value": "1", "text" : "Not at all well-maintained"}
+        ]
+    },
+    { 
+        "text": "How helpful is your academic advisor?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely helpful" },
+            {"value": "4", "text" : "Very helpful" },
+            {"value": "3", "text" : "Somewhat helpful"},
+            {"value": "2", "text" : "Not so helpful"},
+            {"value": "1", "text" : "Not at all helpful"}
+        ]
+    },
+    { 
+        "text": "How easy is it to register for courses at this university?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely easy" },
+            {"value": "4", "text" : "Very easy" },
+            {"value": "3", "text" : "Somewhat easy"},
+            {"value": "2", "text" : "Not so easy"},
+            {"value": "1", "text" : "Not at all easy"}
+        ]
+    },
+    { 
+        "text": "How safe do you feel on campus?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely safe" },
+            {"value": "4", "text" : "Very safe" },
+            {"value": "3", "text" : "Somewhat safe"},
+            {"value": "2", "text" : "Not so safe"},
+            {"value": "1", "text" : "Not at all safe"}
+        ]
+    },
+    { 
+        "text": "How helpful is the staff at the on-campus health center?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely helpful" },
+            {"value": "4", "text" : "Very helpful" },
+            {"value": "3", "text" : "Somewhat helpful"},
+            {"value": "2", "text" : "Not so helpful"},
+            {"value": "1", "text" : "Not at all helpful"}
+        ]
+    },
+    { 
+        "text": "How useful are the services provided by the on-campus career center?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely useful" },
+            {"value": "4", "text" : "Very useful" },
+            {"value": "3", "text" : "Somewhat useful"},
+            {"value": "2", "text" : "Not so useful"},
+            {"value": "1", "text" : "Not at all useful"}
+        ]
+    },
+    { 
+        "text": "How easy is it to obtain the resources you need from the university library system?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "5", "text" : "Extremely easy" },
+            {"value": "4", "text" : "Very easy" },
+            {"value": "3", "text" : "Somewhat easy"},
+            {"value": "2", "text" : "Not so easy"},
+            {"value": "1", "text" : "Not at all easy"}
+        ]
+    }
+]

@@ -1,0 +1,107 @@
+[   
+    {
+        "//":"https://www.psycom.net/depression-test/",
+        "text":"Below is a list of questions that relate to life experiences common among people who have been diagnosed with depression. Please read each question carefully, and indicate how often you have experienced the same or similar challenges in the past few months.",
+        "type": "Skip"
+    },
+    {
+        "text":"Little interest or pleasure in doing things",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Feeling down, depressed, or hopeless",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Trouble falling or staying asleep, or sleeping too much",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Feeling tired or having little energy",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Poor appetite or overeating",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Trouble concentrating on things, such as reading the newspaper or watching television",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Moving or speaking so slowly that other people could have noticed",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"Thoughts that you would be better off dead, or of hurting yourself",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    },
+    {
+        "text":"If you've had any days with issues above, how difficult have these problems made it for you at work, home, school, or with other people?",
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Not at all" },
+            {"value": "2", "text" : "Several days" },
+            {"value": "3", "text" : "More than half of the days"},
+            {"value": "4", "text" : "Nearly every day" }
+        ]
+    }
+]

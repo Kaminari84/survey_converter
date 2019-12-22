@@ -1,0 +1,137 @@
+[
+    { 
+        "//":"https://blog.hubspot.com/service/survey-demographic-questions",
+        "//":"https://www.snapsurveys.com/blog/5-survey-demographic-question-examples/",
+        "//":"https://blog.leadquizzes.com/8-types-of-demographic-questions/",
+        "//":"https://www.questionpro.com/blog/demographic-survey-questions/",
+        "section":"Standard Demographic Questions",
+        "text": "What gender do you identify as?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "male", "text" : "Male" },
+            {"value": "female", "text" : "Female" },
+            {"value": "decline", "text" : "Prefer not to answer"}
+        ]
+    },
+    { 
+        "text": "What is your age?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "range_1", "text" : "0-15 years old" },
+            {"value": "range_2", "text" : "15-30 years old" },
+            {"value": "range_3", "text" : "30-45 years old"},
+            {"value": "range_4", "text" : "45+"},
+            {"value": "range_5", "text" : "Prefer not to answer"}
+        ]
+    },
+    { 
+        "text": "Please specify your ethnicity.", 
+        "type": "Options",
+        "options": [ 
+            {"value": "caucasian", "text" : "Caucasian" },
+            {"value": "african", "text" : "African-American" },
+            {"value": "latino", "text" : "Latino or Hispanic"},
+            {"value": "asian", "text" : "Asian"},
+            {"value": "native", "text" : "Native American"},
+            {"value": "hawaii", "text" : "Native Hawaiian or Pacific Islander"},
+            {"value": "multiple", "text" : "Two or More"},
+            {"value": "other", "text" : "Other/Unknown"},
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    { 
+        "text": "Where is your home located?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "america", "text" : "North America/Central America" },
+            {"value": "samerica", "text" : "South America" },
+            {"value": "europe", "text" : "Europe"},
+            {"value": "africa", "text" : "Africa"},
+            {"value": "asia", "text" : "Asia"},
+            {"value": "suatralia", "text" : "Australia"},
+            {"value": "carribean", "text" : "Caribbean Islands"},
+            {"value": "pacific", "text" : "Pacific Islands"},
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    { 
+        "text": "What is the highest degree or level of education you have completed?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "shs", "text" : "Some High School" },
+            {"value": "hs", "text" : "High School" },
+            {"value": "bsc", "text" : "Bachelor's Degree"},
+            {"value": "msc", "text" : "Master's Degree"},
+            {"value": "phd", "text" : "Ph.D. or higher"},
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    { 
+        "text": "Are you married?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "yes", "text" : "Yes" },
+            {"value": "no", "text" : "No" },
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    {
+        "section":"Demographic Survey Questions",
+        "text": "What is your annual household income?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "range_1", "text" : "Less than $25,000" },
+            {"value": "range_2", "text" : "$25,000 - $50,000" },
+            {"value": "range_3", "text" : "$50,000 - $100,000" },
+            {"value": "range_4", "text" : "$100,000 - $200,000" },
+            {"value": "range_5", "text" : "More than $200,000" },
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    {
+        "text": "What is your current employment status?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "full_time", "text" : "Employed Full-Time" },
+            {"value": "part_time", "text" : "Employed Part-Time" },
+            {"value": "unemployed", "text" : "Seeking opportunities" },
+            {"value": "retired", "text" : "Retired" },
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    {
+        "text": "How many children do you have?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "none", "text" : "None" },
+            {"value": "one_child", "text" : "1" },
+            {"value": "two_four_children", "text" : "2-4" },
+            {"value": "more_than_4", "text" : "More than 4" },
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    {
+        "text": "Are you registered to vote in USA?", 
+        "type": "Options",
+        "options": [ 
+            {"value": "yes", "text" : "Yes" },
+            {"value": "no", "text" : "No" },
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    },
+    {
+        "text": "Which languages are you capable of speaking fluently? (Check all that apply)", 
+        "type": "Options-multiple",
+        "options": [ 
+            {"value": "english", "text" : "English" },
+            {"value": "spanish", "text" : "Spanish" },
+            {"value": "portuguese", "text" : "Portuguese" },
+            {"value": "french", "text" : "French" },
+            {"value": "mandarin", "text" : "Mandarin" },
+            {"value": "arabic", "text" : "Arabic" },
+            {"value": "other", "text" : "Other" },
+            {"value": "decline", "text" : "Prefer not to say"}
+        ]
+    }
+
+]

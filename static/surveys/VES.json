@@ -1,0 +1,40 @@
+[
+    { 
+        "//":"https://www.rand.org/health-care/projects/acove/survey.html",
+        "text": "What is your age?", 
+        "type": "Input"
+    },
+    { 
+        "text": "In general, compared to other people your age, would you say that your health is:", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "Poor" },
+            {"value": "2", "text" : "Fair" },
+            {"value": "3", "text" : "Good"},
+            {"value": "4", "text" : "Very good"},
+            {"value": "5", "text" : "Excelent"}
+        ]
+    },
+    { 
+        "text": "How much difficulty, on average, do you have with stooping, crouching or kneeling?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "No Difficulty" },
+            {"value": "2", "text" : "A little Difficulty" },
+            {"value": "3", "text" : "Some Difficulty"},
+            {"value": "4", "text" : "A lot of Difficulty"},
+            {"value": "5", "text" : "Unable to do"}
+        ]
+    },
+    { 
+        "text": "How much difficulty, on average, do you have with lifting, or carrying objects as heavy as 10 pounds?", 
+        "type": "Options", 
+        "options": [ 
+            {"value": "1", "text" : "No Difficulty" },
+            {"value": "2", "text" : "A little Difficulty" },
+            {"value": "3", "text" : "Some Difficulty"},
+            {"value": "4", "text" : "A lot of Difficulty"},
+            {"value": "5", "text" : "Unable to do"}
+        ]
+    }
+]

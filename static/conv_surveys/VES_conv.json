@@ -1,0 +1,147 @@
+[
+    {
+        "source": "augmented",
+        "text": "Hi, my name is DemographicsBot. Let's start by talking about demographics.",
+        "type": "Skip"
+    },
+    {
+        "//": "https://www.rand.org/health-care/projects/acove/survey.html",
+        "framing": "Neutral_frame",
+        "mod_text": "what is your age?",
+        "org_text": "What is your age?",
+        "prefix": "Would you mind sharing",
+        "text": "Would you mind sharing what is your age?",
+        "type": "Input"
+    },
+    {
+        "framing": "Neutral_frame",
+        "mod_text": "in general, compared to other people your age, would you say that your health is:",
+        "options": [
+            {
+                "framing": "neg_answer",
+                "text": "Poor",
+                "value": "1"
+            },
+            {
+                "framing": "neu_answer",
+                "text": "Fair",
+                "value": "2"
+            },
+            {
+                "framing": "pos_answer",
+                "text": "Good",
+                "value": "3"
+            },
+            {
+                "framing": "pos_answer",
+                "text": "Very good",
+                "value": "4"
+            },
+            {
+                "framing": "pos_answer",
+                "text": "Excelent",
+                "value": "5"
+            }
+        ],
+        "org_text": "In general, compared to other people your age, would you say that your health is:",
+        "prefix": "Continuing, could you tell me",
+        "reactions": {
+            "1": "Thanks for letting me know",
+            "2": "Thanks for letting me know",
+            "3": "Thanks for letting me know",
+            "4": "Thanks for letting me know",
+            "5": "Thanks for letting me know"
+        },
+        "text": "Continuing, could you tell me in general, compared to other people your age, would you say that your health is:",
+        "type": "Options"
+    },
+    {
+        "framing": "Negative_frame",
+        "mod_text": "how much difficulty, on average, do you have with stooping, crouching or kneeling?",
+        "options": [
+            {
+                "framing": "neg_answer",
+                "text": "No Difficulty",
+                "value": "1"
+            },
+            {
+                "framing": "neg_answer",
+                "text": "A little Difficulty",
+                "value": "2"
+            },
+            {
+                "framing": "pos_answer",
+                "text": "Some Difficulty",
+                "value": "3"
+            },
+            {
+                "framing": "neu_answer",
+                "text": "A lot of Difficulty",
+                "value": "4"
+            },
+            {
+                "framing": "neu_answer",
+                "text": "Unable to do",
+                "value": "5"
+            }
+        ],
+        "org_text": "How much difficulty, on average, do you have with stooping, crouching or kneeling?",
+        "prefix": "Further, let me ask you",
+        "reactions": {
+            "1": "I am glad to hear that",
+            "2": "Sounds good",
+            "3": "Thanks for sharing that",
+            "4": "Thanks for sharing that",
+            "5": "Thanks for sharing that"
+        },
+        "text": "Further, let me ask you how much difficulty, on average, do you have with stooping, crouching or kneeling?",
+        "type": "Options"
+    },
+    {
+        "framing": "Negative_frame",
+        "mod_text": "how much difficulty, on average, do you have with lifting, or carrying objects as heavy as 10 pounds?",
+        "options": [
+            {
+                "framing": "neg_answer",
+                "text": "No Difficulty",
+                "value": "1"
+            },
+            {
+                "framing": "neg_answer",
+                "text": "A little Difficulty",
+                "value": "2"
+            },
+            {
+                "framing": "pos_answer",
+                "text": "Some Difficulty",
+                "value": "3"
+            },
+            {
+                "framing": "neu_answer",
+                "text": "A lot of Difficulty",
+                "value": "4"
+            },
+            {
+                "framing": "neu_answer",
+                "text": "Unable to do",
+                "value": "5"
+            }
+        ],
+        "org_text": "How much difficulty, on average, do you have with lifting, or carrying objects as heavy as 10 pounds?",
+        "prefix": "Going forward, can you tell me",
+        "reactions": {
+            "1": "That's good",
+            "2": "I am happy that's the case",
+            "3": "So sorry about that",
+            "4": "So sorry about that",
+            "5": "So sorry about that"
+        },
+        "text": "Going forward, can you tell me how much difficulty, on average, do you have with lifting, or carrying objects as heavy as 10 pounds?",
+        "type": "Options"
+    },
+    {
+        "source": "augmented",
+        "text": "This is it! Thank you for your time.",
+        "type": "End"
+    }
+]

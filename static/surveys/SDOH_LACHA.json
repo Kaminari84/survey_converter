@@ -1,0 +1,71 @@
+[
+    { 
+        "text": "Do you have enough resources to pay for the very basics like food, housing, and medical care?", 
+        "type": "Yes/No"
+    },
+    {
+        "text": "Do you have any significant outstanding bills or debts?",
+        "type": "Yes/No"
+    },
+    {
+        "text": "Do you want help finding work or keeping work or a job?",
+        "type": "Options", 
+        "options": [ 
+            {"value": "Opt_1", "text" : "Yes, help finding work" },
+            {"value": "Opt_2", "text" : "Yes, help keeping work" },
+            {"value": "Opt_3", "text" : "I do not need or want help"}
+        ]
+    },
+    {
+        "text": "Do you want help with school or training? For example, starting or completing job training or getting a high school diploma, GED or equivalent?",
+        "type": "Yes/No"
+    },
+    {
+        "text": "What is your housing situation today?",
+        "type": "Options",
+        "options": [ 
+            {"value": "Opt_1", "text" : "I have housing" },
+            {"value": "Opt_2", "text" : "I have a place to live today, but I am worried about losing it in the future" },
+            {"value": "Opt_3", "text" : "I do not have a steady place to live"}
+        ]
+    },
+    {
+        "text": "Think about the place you live. Do you have problems with any of the following? (CHOOSE ALL THAT APPLY)",
+        "type": "Options-multiple",
+        "options": [ 
+            {"value": "Opt_1", "text" : "Pests such as bugs, ants, or mice" },
+            {"value": "Opt_2", "text" : "Mold" },
+            {"value": "Opt_3", "text" : "Lead paint or pipes"},
+            {"value": "Opt_4", "text" : "Lack of heat"},
+            {"value": "Opt_5", "text" : "Oven or stove not working"},
+            {"value": "Opt_6", "text" : "Smoke detectors missing or not working"},
+            {"value": "Opt_7", "text" : "Water leaks"}
+        ]
+    },
+    {
+        "text": "In the past 12 months has the electric, gas, oil, or water company threatened to shut off services in your home?",
+        "type": "Options",
+        "options": [ 
+            {"value": "Opt_1", "text" : "Yes" },
+            {"value": "Opt_2", "text" : "No" },
+            {"value": "Opt_3", "text" : "Already shut off"}
+        ]
+    },
+    {
+        "text": "Within the past 12 months, were you worried whether your food would run out before you got money to buy more?",
+        "type": "Yes/No"
+    },
+    {
+        "text": "Within the past 12 months the food you bought just didn't last and you didn't have money to get more. Was this:",
+        "type": "Options",
+        "options": [ 
+            {"value": "Opt_1", "text" : "Often true" },
+            {"value": "Opt_2", "text" : "Sometimes true" },
+            {"value": "Opt_3", "text" : "Never true"}
+        ]
+    },
+    {
+        "text": "Have you experienced difficulty getting needed services because you do not have transportation?",
+        "type": "Yes/No"
+    }
+]
